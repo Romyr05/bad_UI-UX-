@@ -1,0 +1,5467 @@
+/* Body backgroundcolor:white */
+
+
+body {
+	margin: 0px 0px 0px 0px;
+	background-color : #FFFFFF ;
+	color : #000000;
+	scrollbar-3dlight-color: #E5AAAA;
+	scrollbar-base-color: #932828;
+	scrollbar-darkshadow-color: #E5AAAA;
+	scrollbar-face-color: #932828;
+	scrollbar-highlight-color: #E5AAAA;
+	scrollbar-shadow-color: #E5AAAA;
+	scrollbar-track-color: #E5AAAA;
+	scrollbar-arrow-color: #E5AAAA;
+	}
+
+/*
+td,tr,p,div {
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: Maroon;
+	}
+*/
+
+/*
+ * 
+ * These stylings are to format the way tables are
+ */
+
+
+table.borderbottomonly {
+	margin: 0px 0px 0px 0px;
+	/*width: 90%;*/
+	border-left: solid 0px #000000;
+	border-right: solid 0px #000000;
+	border-top: solid 0px #000000;
+	border-bottom: solid 0px #000000;
+	}
+table.borderbottomonly td {
+	/* well.. for formatting the table cells of the module table */
+        margin: 0px 0px 0px 0px;
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+        border-right: solid 1px #000000;
+	}
+
+
+table.usertable {
+	margin: 0px 0px 0px 0px;
+	/*width: 90%;*/
+	border-left: solid 0px #000000;
+	border-right: solid 0px #000000;
+	border-top: solid 0px #000000;
+	border-bottom: solid 0px #000000;
+	}
+
+table.usertable th {
+	/* styling the module header, and the module titles */
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #220A0A;
+	text-align: left;
+	width: 100%;
+	background: transparent  no-repeat left;
+	text-indent: 2px; /*18px;*/
+	height: 20px;
+	border-bottom: 1px solid #932828;
+	line-height: 20px;
+	}
+
+table.usertable td {
+	/* well.. for formatting the table cells of the module table */
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	}
+	
+/*-------------------*/
+table.contacttable {
+	margin: 0px 0px 0px 0px;
+	/*width: 90%;*/
+	border-left: solid 0px #000000;
+	border-right: solid 0px #000000;
+	border-top: solid 0px #000000;
+	border-bottom: solid 0px #000000;
+	}
+
+table.contacttable th {
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: maroon; /*#220A0A;*/
+	text-align: left;
+	width: 100%;
+	background: transparent  no-repeat left;
+	text-indent: 2px; /*18px;*/
+	/*height: 20px;
+	border-bottom: 1px solid #932828;
+	line-height: 20px;*/
+	}
+
+table.contacttable td {
+	/* well.. for formatting the table cells of the module table */
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	}
+
+/*-------------------*/
+table.contacttablebackground {
+	margin: 0px 0px 0px 0px;
+	/*width: 90%;*/
+	border-left: solid 0px #000000;
+	border-right: solid 0px #000000;
+	border-top: solid 0px #000000;
+	border-bottom: solid 0px #000000;
+	background: #ebeef7; /*#CCCCCC lightgrey lightyellow;*/
+	}
+
+table.contacttablebackground th {
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: maroon; /*#220A0A;*/
+	text-align: left;
+	width: 100%;
+	background: transparent  no-repeat left;
+	text-indent: 2px; /*18px;*/
+	/*height: 20px;
+	border-bottom: 1px solid #932828;
+	line-height: 20px;*/
+	}
+
+table.contacttablebackground td {
+	/* well.. for formatting the table cells of the module table */
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: 006633;  /* FONT dark green */
+	}
+/*-------------------*/	
+	
+
+/*dotted lines in tables*/
+.linebox {
+        border: solid;
+        border: dotted;
+        border-width: 1px;
+        border-bottom-color: #B3CFBD;
+        border-top-color: #B3CFBD;
+        border-left-color: #B3CFBD;
+        border-right-color: #B3CFBD;
+}	
+
+.linebox2 {
+        border: solid;
+        border: dotted;
+        border-width: 2px;
+        border-bottom-color: #B3CFBD;
+        border-top-color: #B3CFBD;
+        border-left-color: #B3CFBD;
+        border-right-color: #B3CFBD;
+}
+
+.linebox3 {
+        border: solid;
+        border: dotted;
+        border-width: 3px;
+        border-bottom-color: #B3CFBD;
+        border-top-color: #B3CFBD;
+        border-left-color: #B3CFBD;
+        border-right-color: #B3CFBD;
+}
+	
+
+/*This part is for the main header table*/
+.maintable {
+	border-collapse: collapse; 
+	border: 0px; 
+	padding: 0; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	width: 100%; 
+	height: 100% }
+
+.crsismaintable         {
+	border-collapse: collapse; 
+	border: 0px; 
+	padding: 0; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	width: 100%; 
+	height: 100% }
+	
+
+.maintd1   { 
+	border-collapse: collapse; 
+	border: 0px; 
+	padding: 0; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	width: 336; 
+	height: 84; }
+
+.maintd2   { 
+	border-collapse: collapse; 
+	border: 0px; 
+	padding: 0; 
+	text-align: right; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	width: 100%; 
+	height: 84; }
+
+.maintd3   { 
+	border-collapse: collapse; 
+	border: 0px; 
+	padding: 0; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	width: 336; 
+	height: 34; }
+
+.maintd4   { 
+	border-collapse: collapse; 
+	border: 0px; 
+	padding: 0; 
+	text-align: right; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	width: 100%; 
+	height: 34; }
+
+
+
+/*This part is for the footer table*/
+/* background=gray*/
+.maintdfoot1   { 
+	border-collapse: collapse; 
+	border: 0px; 
+	padding: 0; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	width: 100%; 
+	height: 11; 
+	background-color:  #828282; }
+
+.maintdfoot2   { 
+	border-collapse: collapse; 
+	border: 0px; 
+	padding: 0; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	width: 100%; 
+	height: 5; }
+
+.maintdfoot3   { 
+	border-collapse: collapse; 
+	border: 0px; 
+	padding: 0; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	width: 100%; 
+	height: 3; 
+	background-color:  #828282; }
+
+
+
+/*Links above the footer. e.g. The OUR-UPV*/
+/* font color : vandykebrown #5E2605 */
+.footercopyright{ 
+	font-family: Arial, sans-serif; 
+	font-weight: bold; 
+	font-size: 8pt; 
+	color: #551011; 
+	text-align: center }
+
+
+
+.bodycell      {
+	border-collapse: collapse; 
+	border: 0px; 
+	padding: 0; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	text-align: center; 
+	width: 100% }
+
+
+/* FOR THE MENU AT FOOTER */
+.nearfootermenu     { 
+	border-collapse: collapse; 
+	border: 0px; 
+	padding: 0; 
+	text-align: center; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	height: 22; 
+	background-color: #5E2605; /*vandykebrown #5E2605 */
+	font-color: #FFFFFF; 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt; 
+	font-weight: bold; 
+	text-decoration:none; }
+	
+	
+/*all main and submenu items carry this style : WHITE foreground GREEN highlight*/
+a:link.menubar	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration: none; }
+
+a:hover.menubar	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	color: #33FF33; /*green*/
+	text-decoration: none; }
+
+a:visited.menubar	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration: none; 
+	text-align: right; }
+
+.menubar		{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #FFFFFF; /*white*/
+	font-weight: bold; 	
+	text-decoration:none }
+	
+	
+a:link.menubarseagreen	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	text-decoration:none;
+	}
+
+a:hover.menubarseagreen	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	color: maroon; 
+	text-decoration: none; 
+	text-decoration:underline; }
+
+a:visited.menubarseagreen { 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none; 
+	color: #003300; /*green*/ 
+	text-align: right; 
+	text-decoration:none; }
+
+.menubarseagreen	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px; 
+	color:  #426F42; /*mediumseagreen*/
+	font-weight: none; 	
+	text-decoration:none; }	
+	
+	
+a:link.menubarseagreen10BNU	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	text-decoration:none;
+	}
+
+a:hover.menubarseagreen10BNU	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	color: maroon; 
+	text-decoration: none; 
+	text-decoration:underline; }
+
+a:visited.menubarseagreen10BNU { 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none; 
+	color: #003300; /*green*/ 
+	text-align: right; 
+	text-decoration:none; }
+
+.menubarseagreen10BNU	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt; 
+	color:  #426F42; /*mediumseagreen*/
+	font-weight: none; 	
+	text-decoration:none; }		
+	
+	
+	
+a:link.menubargreen	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	text-decoration:underline;
+	}
+
+a:hover.menubargreen	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	color: maroon; /*white*/ 
+	text-decoration: none; 
+	text-decoration:underline; }
+
+a:visited.menubargreen { 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none; 
+	color: #003300; /*green*/ 
+	text-align: right; 
+	text-decoration:underline; }
+
+.menubargreen	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px; 
+	color:  #003300; /*green*/
+	font-weight: bold; 	
+	text-decoration:underline; }
+	
+	
+a:link.menubargreen10B	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	text-decoration:underline;
+	}
+
+a:hover.menubargreen10B	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	color: maroon; /*white*/ 
+	text-decoration: none; 
+	text-decoration:underline; }
+
+a:visited.menubargreen10B { 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none; 
+	color: #003300; /*green*/ 
+	text-align: right; 
+	text-decoration:underline; }
+
+.menubargreen10B	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt; 
+	color:  #003300; /*green*/
+	font-weight: bold; 	
+	text-decoration:underline; }	
+	
+	
+a:link.menubargreen10BNU	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	text-decoration:none;
+	}
+
+a:hover.menubargreen10BNU	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	color: maroon; /*white*/ 
+	text-decoration: none; 
+	text-decoration:underline; }
+
+a:visited.menubargreen10BNU { 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none; 
+	color: #003300; /*green*/ 
+	text-align: right; 
+	text-decoration:none; }
+
+.menubargreen10BNU	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt; 
+	color:  #003300; /*green*/
+	font-weight: bold; 	
+	text-decoration:none; }		
+	
+	
+	
+a:link.menubarmaroon	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	text-decoration:underline;
+	}
+
+a:hover.menubarmaroon	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	color: #003300; /*green*/
+	text-decoration: none; 
+	text-decoration:underline; }
+
+a:visited.menubarmaroon	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none; 
+	color: #993333; /*#FF0000; red*/
+	text-align: right; 
+	text-decoration:underline; }
+
+.menubarmaroon		{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px; 
+	color: maroon; /*white*/
+	font-weight: bold; 	
+	text-decoration:underline; }
+	
+	
+a:link.menubarmaroon10B	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	text-decoration:underline;
+	}
+
+a:hover.menubarmaroon10B	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	color: #003300; /*green*/
+	text-decoration: none; 
+	text-decoration:underline; }
+/* SO WHEN HOVERED CHANGES
+a:visited.menubarmaroon10B	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none; 
+	color: maroon; *//*#993333;*/ /*#FF0000; red*/
+	/*text-align: right; 
+	text-decoration:underline; }
+*/
+.menubarmaroon10B		{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt; 
+	color: maroon; /*white*/
+	font-weight: bold; 	
+	text-decoration:underline; }
+	
+
+a:link.menubarmaroon7B	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	text-decoration:underline;
+	}
+
+a:hover.menubarmaroon7B	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	color: #003300; /*green*/
+	text-decoration: none; 
+	text-decoration:underline; }
+
+a:visited.menubarmaroon7B	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none; 
+	color: #993333; /*#FF0000; red*/
+	text-align: right; 
+	text-decoration:underline; }
+
+.menubarmaroon7B		{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 7pt; 
+	color: maroon; /*white*/
+	font-weight: bold; 	
+	text-decoration:underline; }	
+	
+	
+	
+a:link.menubarmaroon7	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	text-decoration:underline;
+	}
+
+a:hover.menubarmaroon7	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	color: #003300; /*green*/
+	text-decoration: none; 
+	text-decoration:underline; }
+
+a:visited.menubarmaroon7	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none; 
+	color: #993333; /*#FF0000; red*/
+	text-align: right; 
+	text-decoration:underline; }
+
+.menubarmaroon7		{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 7pt; 
+	color: maroon; /*white*/
+	text-decoration:underline; }		
+	
+	
+
+a:link.menubarmaroon9B	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	text-decoration:underline;
+	}
+
+a:hover.menubarmaroon9B	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	color: #003300; /*green*/
+	text-decoration: none; 
+	text-decoration:underline; }
+
+a:visited.menubarmaroon9B	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none; 
+	color: maroon; /*#993333;*/ /*#FF0000; red*/
+	text-align: right; 
+	text-decoration:underline; }
+
+.menubarmaroon9B		{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9pt; 
+	color: maroon; /*white*/
+	font-weight: bold; 	
+	text-decoration:underline; }	
+	
+	
+	
+	
+	
+a:link.menuleftmaroon10B	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	text-decoration:underline;
+	}
+
+a:hover.menuleftmaroon10B	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	color: #003300; /*green*/
+	text-decoration: none; 
+	text-decoration:underline; }
+
+a:visited.menuleftmaroon10B	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none; 
+	color: #993333; /*#FF0000; red*/
+	text-align: right; 
+	text-decoration:underline; }
+
+.menuleftmaroon10B		{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10pt; 
+	color: maroon; /*white*/
+	font-weight: bold; 	
+	text-decoration:underline; }
+	
+
+a:link.menuleftmaroon12B	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	text-decoration:underline;
+	}
+
+a:hover.menuleftmaroon12B	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	color: #003300; /*green*/
+	text-decoration: none; 
+	text-decoration:underline; }
+
+a:visited.menuleftmaroon12B	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none; 
+	color: #993333; /*#FF0000; red*/
+	text-align: right; 
+	text-decoration:underline; }
+
+.menuleftmaroon12B		{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px; 
+	color: maroon; /*white*/
+	font-weight: bold; 	
+	text-decoration:underline; }
+	
+
+a:link.menuleftmaroon14B	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	text-decoration:underline;
+	}
+
+a:hover.menuleftmaroon14B	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	color: #003300; /*green*/
+	text-decoration: none; 
+	text-decoration:underline; }
+
+a:visited.menuleftmaroon14B	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none; 
+	color: #993333; /*#FF0000; red*/
+	text-align: right; 
+	text-decoration:underline; }
+
+.menuleftmaroon14B		{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px; 
+	color: maroon; /*white*/
+	font-weight: bold; 	
+	text-decoration:underline; }
+	
+	
+	
+a:link.menuleftmaroon16B	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	text-decoration:underline;
+	}
+
+a:hover.menuleftmaroon16B	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	color: #003300; /*green*/
+	text-decoration: none; 
+	text-decoration:underline; }
+
+a:visited.menuleftmaroon16B	{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none; 
+	color: maroon; /*#993333;*/ /*#FF0000; red*/
+	text-align: right; 
+	text-decoration:underline; }
+
+.menuleftmaroon16B		{ 
+	font-family: Trebuchet MS, Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px; 
+	color: maroon; /*white*/
+	font-weight: bold; 	
+	text-decoration:underline; }	
+
+
+/* 01-18-2005 FOR THE TABLE RECORD ENTRIES*/
+.recordentry     { 
+	border-collapse: collapse; 
+	border: 0px; 
+	padding: 0; 
+	text-align: left; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	height: 22; 
+	background-color: #EEE0E5; /*beige*/
+	color: 006633;  /* FONT dark green */
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	font-weight: bold; 
+	text-decoration:none; }
+.recordentrysmall     { 
+	border-collapse: collapse; 
+	border: 0px; 
+	padding: 0; 
+	text-align: left; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	height: 18; 
+	background-color: #EEE0E5; /*beige*/
+	color: 006633;  /* FONT dark green */
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	font-weight: regular; 
+	text-decoration:none; }
+.recordentryleftgreen8B     { 
+	border-collapse: collapse; 
+	border: 0px; 
+	padding: 0; 
+	text-align: left; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	height: 22; 
+	background-color: #EEE0E5; /*beige*/
+	color: 006633;  /* FONT dark green */
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	font-weight: bold; 
+	text-decoration:none; }	
+
+.recordentryred     { 
+	border-collapse: collapse; 
+	border: 0px; 
+	padding: 0; 
+	text-align: left; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	height: 22; 
+	background-color: #EEE0E5; /*beige*/
+	color: CD0000;  /* FONT red */
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	font-weight: bold; 
+	text-decoration:none; }	
+.recordentryleftred8B     { 
+	border-collapse: collapse; 
+	border: 0px; 
+	padding: 0; 
+	text-align: left; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	height: 22; 
+	background-color: #EEE0E5; /*beige*/
+	color: CD0000;  /* FONT red */
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	font-weight: bold; 
+	text-decoration:none; }		
+	
+/* alternate color */
+.recordentrylight     { 
+	border-collapse: collapse; 
+	border: 0px; 
+	padding: 0; 
+	text-align: left; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	height: 22; 
+	background-color: FFFFFF; /*light beige*/
+	color: 006633;  /* FONT dark green */
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	font-weight: bold; 
+	text-decoration:none; }
+.recordentrylightsmall     { 
+	border-collapse: collapse; 
+	border: 0px; 
+	padding: 0; 
+	text-align: left; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	height: 18; 
+	background-color: FFFFFF; /*light beige*/
+	color: 006633;  /* FONT dark green */
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	font-weight: regular; 
+	text-decoration:none; }
+.recordentrylightleftgreen8B     { 
+	border-collapse: collapse; 
+	border: 0px; 
+	padding: 0; 
+	text-align: left; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	height: 22; 
+	background-color: FFFFFF; /*light beige*/
+	color: 006633;  /* FONT dark green */
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	font-weight: bold; 
+	text-decoration:none; }	
+
+.recordentrylightred     { 
+	border-collapse: collapse; 
+	border: 0px; 
+	padding: 0; 
+	text-align: left; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	height: 22; 
+	background-color: FFFFFF; /*light beige*/
+	color: CD0000;  /* FONT red */
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	font-weight: bold; 
+	text-decoration:none; }
+.recordentrylightleftred8B    { 
+	border-collapse: collapse; 
+	border: 0px; 
+	padding: 0; 
+	text-align: left; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	height: 22; 
+	background-color: FFFFFF; /*light beige*/
+	color: CD0000;  /* FONT red */
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	font-weight: bold; 
+	text-decoration:none; }	
+	
+	
+
+/*This part is for ANY internal body tables*/
+.bodytable      {
+	border-collapse: collapse; 
+	border: 0px; 
+	padding: 0; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	width: 660; }
+	
+/* FOR THE HEADING OF TABLE */
+.tdheadmaroon9B { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #FFFFFF; /* white */
+	font-weight: bold;
+	text-decoration:none; 
+	background-color: #7B1113; /* up maroon */
+	text-align: center }
+	
+.bodytdhead     { 
+	border-collapse: collapse; 
+	border: 0px; 
+	padding: 0; 
+	text-align: center; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	height: 22; 
+	background-color: #5E2605; /*vandykebrown #5E2605 */
+	color: #FFFFFF; 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 11pt; 
+	font-weight: bold; 
+	text-decoration:none; }
+	
+.bodytdheadsmall { 
+	border-collapse: collapse; 
+	border: 0px; 
+	padding: 0; 
+	text-align: center; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	height: 22; 
+	background-color: #5E2605; /*vandykebrown #5E2605 */
+	color: #FFFFFF; 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	font-weight: bold; 
+	text-decoration:none; }	
+
+
+.bodytdodd      { 
+	border-collapse: collapse; 
+	border: 0px; 
+	padding: 0; 
+	text-align: center; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	height: 22; 
+	background-color: #F4F4F4 }
+
+.bodytdeven     { 
+	border-collapse: collapse; 
+	border: 0px; 
+	padding: 0; 
+	text-align: center; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	height: 22; 
+	background-color: #CED0CE }
+
+.bodytdend      { 
+	border-collapse: collapse; 
+	border: 0px; 
+	padding: 0; 
+	text-align: center; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	height: 10; 
+	background-color: #5C0101 }
+
+.bodyloginhead  { 
+	border-collapse: collapse; 
+	border: 0px; 
+	padding: 0; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	height: 22; 
+	background-color: #5C0101; 
+	color: #FFFFFF; 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt; 
+	font-weight: bold; 
+	text-decoration:none; }
+
+.bodyloginodd   { 
+	border-collapse: collapse; 
+	border: 0px; 
+	padding: 0; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	height: 22; 
+	background-color: #F4F4F4 }
+
+.bodylogineven  { 
+	border-collapse: collapse; 
+	border: 0px; 
+	padding: 0; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	height: 22; 
+	background-color: #CED0CE }
+
+.bodyloginend   { 
+	border-collapse: collapse; 
+	border: 0px; 
+	padding: 0; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	height: 10; 
+	background-color: #5C0101 }
+
+
+
+
+/*all main and submenu items carry this style*/
+a:link.menu	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration: none; }
+
+a:hover.menu	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	color: #006400; /*dark green*/
+	text-decoration: none; }
+
+a:visited.menu	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration: none; 
+	text-align: right; }
+.menu		{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #551011; /*maroon*/
+	font-weight: bold; 	
+	text-decoration:none }
+
+	
+a:link.menuunderline	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration: underline; }
+
+a:hover.menuunderline	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	color: #006400; /*dark green*/
+	text-decoration: underline; }
+
+a:visited.menuunderline	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration: underline; 
+	text-align: right; }
+.menuunderline		{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #551011; /*maroon*/
+	font-weight: bold; 	
+	text-decoration:underline }
+	
+a:link.menuunderlinecenter	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration: underline; 
+	text-align: center;}
+a:hover.menuunderlinecenter	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	color: #006400; /*dark green*/
+	text-decoration: underline; 
+	text-align: center;}
+a:visited.menuunderlinecenter	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration: underline; 
+	text-align: center; }
+.menuunderlinecenter		{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #551011; /*maroon*/
+	font-weight: bold; 	
+	text-decoration:underline;
+	text-align: center;}	
+	
+a:link.menuunderlinecenter7	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7pt; 
+	text-decoration: underline; 
+	text-align: center;}
+a:hover.menuunderlinecenter7	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7pt; 
+	color: #006400; /*dark green*/
+	text-decoration: underline; 
+	text-align: center;}
+a:visited.menuunderlinecenter7	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7pt; 
+	text-decoration: underline; 
+	text-align: center; }
+.menuunderlinecenter7		{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7pt; 
+	color: #551011; /*maroon*/
+	font-weight: bold; 	
+	text-decoration:underline;
+	text-align: center;}		
+
+
+a:link.menubrown8B	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration: none; }
+
+a:hover.menubrown8B	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt;
+	color: #006400; /*dark green*/
+	text-decoration: none; }
+
+a:visited.menubrown8B	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration: none; 
+	text-align: right; }
+
+.menubrown8B		{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: bold; 	
+	text-decoration:none }
+
+
+
+/*HIDDEN MENU IN MAROON BACKGROUND - colors used are all maroon*/
+a:link.menumaroon	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration: none; }
+
+a:hover.menumaroon	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	color: #551011; /*maroon*/
+	text-decoration: none; }
+
+a:visited.menumaroon	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration: none; 
+	text-align: right; }
+.menumaroon		{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #551011; /*maroon*/
+	font-weight: bold; 	
+	text-decoration:none }
+	
+	
+a:link.menugreen10B	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration: none; }
+
+a:hover.menugreen10B	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10.5pt; 
+	color: #006633;  /* FONT dark green */
+	text-decoration: none; }
+
+a:visited.menugreen10B	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration: none; 
+	text-align: right; }
+.menugreen10B		{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #006633;  /* FONT dark green */
+	font-weight: bold; 	
+	text-decoration:none }	
+
+
+a:link.menu2	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration: none; }
+
+a:hover.menu2	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	color: red; /*#551011;*/ /*maroon*/
+	text-decoration: none; }
+
+a:visited.menu2	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration: none; 
+	text-align: right; }
+.menu2		{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #006400; /*dark green*/	
+	font-weight: bold; 	
+	text-decoration:none }
+	
+
+/*all table action items carry this style*/
+a:link.tableaction	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration: none; }
+
+a:hover.tableaction	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	color: #008000; 
+	text-decoration: none; }
+
+a:visited.tableaction	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration: none; 
+	text-align: right; }
+
+a.tableaction		{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #5C0101; 	
+	font-weight: bold; 
+	text-decoration:none }
+
+
+
+/*When a submenu is active*/
+.on		      { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #5C0101; 
+	font-weight: bold; 
+	text-decoration:none }
+
+a:link.footerlink     { 
+	font-family: Arial, sans-serif; 
+	color: #FFFFFF; 
+	text-decoration: none; }
+
+a:hover.footerlink    { 
+	font-family: Arial, sans-serif; 
+	color: #C0C0C0; 
+	text-decoration: none;  }
+
+a:visited.footerlink  { 
+	font-family: Arial, sans-serif; 
+	text-decoration: none; }
+
+.footerlink	      { 
+	font-family: Arial, sans-serif; 
+	font-weight: bold; 
+	font-size: 8pt; 
+	color: #551011; 	
+	text-align: center }
+
+
+/* link fontcolor:ghostwhite #F8F8FF, hover font:bright red #FF0033, visited font:mediumseagreen #426F42 */
+a:link.webmaster    	{ 
+	font-family: Arial, sans-serif; 
+	font-size: 7.5pt; 
+	color: #F8F8FF; 
+	text-align: center }
+
+a:hover.webmaster	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #FF0033; /*bright red*/	
+	text-decoration: none; }
+
+a:visited.webmaster     { 
+	font-family: Arial, sans-serif; 
+	font-size: 7.5pt; 
+	color: #426F42; /*mediumseagreen*/
+	text-align: center }
+
+.webmaster              { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7.5pt; 	
+	color: #426F42; /*mediumseagreen*/ /*#F8F8FF; ghostwhite*/	
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+
+.webmastertext          { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7.5pt; 	
+	color: maroon;  /*red*/	
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+
+
+/* link fontcolor:ghostwhite #F8F8FF, hover font:bright red #FF0033, visited font:mediumseagreen #426F42 */
+a:link.text    	{ 
+	font-family: Arial, sans-serif; 
+	font-size: 7pt; 
+	color: #F8F8FF; 
+	text-align: center }
+
+a:hover.text	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #FF0033; 
+	text-decoration: none; }
+
+a:visited.text  { 
+	font-family: Arial, sans-serif; 
+	font-size: 7.5pt; 
+	color: #426F42; 
+	text-align: center }
+
+
+
+/*links and text located on the text part outside body tables*/
+
+a:link.announce	   { 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration:none; }
+
+a:hover.announce   { 
+	font-family: Arial, helvetica, sans-serif; 
+	color: #AB2929; 
+	text-decoration: none; }
+
+a:visited.announce { 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration:none }
+
+
+/*text and links located on the front page*/
+.announce	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 14pt; 
+	color: #5C0101; 	
+	text-decoration:none; 
+	text-align: left }
+
+/*The date*/
+.date		{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 	
+	color: #FFFFFF; 
+	text-align: center }
+
+/*items enclosed by brackts which are main topics*/
+a:link.header	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration:none; }
+
+a:hover.header	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	color: #ADAEAD; 
+	text-decoration: none; }
+
+a:visited.header	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration:none }
+
+.header		{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: #FFFFFF; 
+	font-weight: bold; 	
+	text-decoration:none; 
+	text-align: right }
+
+/*the text part of the site - aligned right*/
+.disclaimer	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #770101; 	
+	text-decoration:none; 
+	line-height: 150% }
+
+/*the error part of the login*/
+.loginerr	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #DC2300; 	
+	text-decoration:none; }
+
+/*the text part of the site - aligned left*/
+.textl		{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #770101; 	
+	text-decoration:none; 
+	text-align: left; 
+	line-height: 150% }
+
+/*the text part of the site - aligned center*/
+.textc		{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #770101; 	
+	text-decoration:none; 
+	text-align: center; 
+	line-height: 150% }
+
+/*the heading of each section - title*/
+.head		{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 16pt; 
+	color: #770101; 
+	font-weight: bold; 	
+	text-decoration:none; 
+	text-align: left }
+
+.head12B		{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: #770101; 
+	font-weight: bold; 	
+	text-decoration:none; 
+	text-align: left }	
+
+.head11B		{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 11pt; 
+	color: #770101; 
+	font-weight: bold; 	
+	text-decoration:none; 
+	text-align: left }
+
+.headcenter		{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 16pt; 
+	color: #770101; 
+	font-weight: bold; 	
+	text-decoration:none; 
+	text-align: center }	
+	
+/*the heading of each section - title*/
+.headsub		{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 14pt; 
+	color: #770101; 
+	font-weight: bold; 	
+	text-decoration:none; 
+	text-align: left }
+
+/**/
+.login		{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #770101; 	
+	text-decoration:none }
+	
+/*text for welcoming guests under the menu bar on top right section*/
+.welcome	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #D1CFA1; 	
+	text-decoration:none; 
+	font-weight: bold; 
+	text-align: right; }
+
+
+
+/*main news heading*/
+.mainnews	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #770101; 
+	font-weight: bold; 	
+	text-decoration:none; 
+	text-align: right }
+
+/*button properties*/
+.button		{
+	BORDER-RIGHT: #93c000 0px; 
+	BORDER-TOP: #93c000 0px; 
+	FONT-SIZE: 8pt; 
+	COLOR: #FFFFFF; /*white*/	
+	BORDER-LEFT: #93c000 0px;  
+	BORDER-BOTTOM: #93c000 0px; 
+	PADDING-RIGHT: 0px; 
+	PADDING-LEFT: 0px; 
+	PADDING-BOTTOM: 0px; 
+	PADDING-TOP: 0px; 
+	FONT-FAMILY: arial, helvetica, sans-serif; 
+	BACKGROUND-COLOR: #5E2605 } /*#770101 }*/ /*vandykebrown #5E2605*/
+
+.buttonmaroonback8 { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #FFFFFF; 
+	font-weight: none;
+	background-color: #7B1113;  /* up maroon */
+	text-decoration:none }	
+.buttonmaroonback8B { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #FFFFFF; 
+	font-weight: bold;
+	background-color: #7B1113;  /* up maroon */
+	text-decoration:none }	
+	
+.buttonmaroonback9 { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #FFFFFF; 
+	font-weight: none;
+	background-color: #7B1113;  /* up maroon */
+	text-decoration:none }	
+.buttonmaroonback9B { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #FFFFFF; 
+	font-weight: bold;
+	background-color: #7B1113;  /* up maroon */
+	text-decoration:none }	
+	
+.buttonmaroonfront9 { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #7B1113;  /* up maroon */
+	font-weight: none;
+	background-color: #dddddd; /*grey*/
+	text-decoration:none }	
+.buttonmaroonfront9B { 
+	padding: 0px 2px 0px 2px;
+	border-left: #ADADAD thin double;
+	border-top: #ADADAD thin double;
+	border-right: #737373 thin double;
+	border-bottom: #737373 thin double;	
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #7B1113;  /* up maroon */
+	font-weight: bold;
+	background-color: #F2F2F2;
+	text-decoration:none }		
+
+
+
+.headcenter	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 16pt; 
+	color: #770101; 
+	font-weight: bold; 	
+	text-decoration:none; 
+	text-decoration: none; 
+	text-align: center; }
+
+.sub		{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #DC2300; 
+	font-weight: bold; 	
+	text-decoration:none; 
+	text-align: right }
+
+/*the textfield properties of any form*/
+.textfield	{
+	border:1px solid #ADAEAD; 
+	padding-left:4px; 
+	padding-right:0px; 
+	font-size: 9pt; 
+	color: #770101; 
+	font-family: arial, helvetica, sans-serif }
+
+.textboxdisabled {
+	border: 2px solid #ADAEAD;
+	padding-left:0px; 
+	padding-right:0px; 	
+	font-size: 10pt; 	
+	font-family: arial, helvetica, sans-serif
+	color: #770101; 
+	background-color: #dddddd; /*grey*/
+}
+
+.textboxmaroon7B {
+	border: 2px solid #771111;
+	padding-left:4px; 
+	padding-right:1px; 	
+	font-size: 7pt; 
+	font-weight: bold; 
+	font-family: arial, helvetica, sans-serif;
+	color: #771111; /* brown #551011 - maroon#770101; */
+	/*background-color: #bbbbbb;*/
+}
+.textboxmaroon7BDisabled {
+	border: 2px solid #771111;
+	padding-left:4px; 
+	padding-right:1px; 	
+	font-size: 7pt; 
+	font-weight: bold; 
+	font-family: arial, helvetica, sans-serif;
+	color: #771111; /* brown #551011 - maroon#770101; */
+	background-color: #dddddd;
+}
+
+.textboxmaroon8B {
+	border: 2px solid #771111;
+	padding-left:4px; 
+	padding-right:1px; 	
+	font-size: 8pt; 
+	font-weight: bold; 
+	font-family: arial, helvetica, sans-serif;
+	color: #771111; /* brown #551011 - maroon#770101; */
+	/*background-color: #bbbbbb;*/
+}
+.textboxmaroon8BDisabled {
+	border: 2px solid #771111;
+	padding-left:4px; 
+	padding-right:1px; 	
+	font-size: 8pt; 
+	font-weight: bold; 
+	font-family: arial, helvetica, sans-serif;
+	color: #771111; /* brown #551011 - maroon#770101; */
+	background-color: #dddddd;
+}
+
+.textboxmaroon9B {
+	border: 2px solid #771111;
+	padding-left:4px; 
+	padding-right:1px; 	
+	font-size: 9pt; 
+	font-weight: bold; 
+	font-family: arial, helvetica, sans-serif;
+	color: #771111; /* brown #551011 - maroon#770101; */
+	/*background-color: #bbbbbb;*/
+}
+
+.textboxmaroon9BCenter {
+	border: 2px solid #771111;
+	padding-left:4px; 
+	padding-right:1px; 	
+	font-size: 9pt; 
+	font-weight: bold; 
+	font-family: arial, helvetica, sans-serif;
+	color: #771111; /* brown #551011 - maroon#770101; */
+	/*background-color: #bbbbbb;*/
+        text-align:center;
+}
+
+.textboxmaroon9BDisabled {
+	border: 2px solid #771111;
+	padding-left:4px; 
+	padding-right:1px; 	
+	font-size: 9pt; 
+	font-weight: bold; 
+	font-family: arial, helvetica, sans-serif;
+	color: #771111; /* brown #551011 - maroon#770101; */
+	background-color: #dddddd;
+}
+
+.textboxmaroon9BDisabledCenter {
+	border: 2px solid #771111;
+	padding-left:4px; 
+	padding-right:1px; 	
+	font-size: 9pt; 
+	font-weight: bold; 
+	font-family: arial, helvetica, sans-serif;
+	color: #771111; /* brown #551011 - maroon#770101; */
+	background-color: #dddddd;
+        text-align:center;
+}
+
+
+.textboxmaroon14B {
+	border: 2px solid #771111;
+	padding-left:4px; 
+	padding-right:1px; 	
+	font-size: 14pt; 
+	font-weight: bold; 
+	font-family: arial, helvetica, sans-serif;
+	color: #771111; /* brown #551011 - maroon#770101; */
+	/*background-color: #bbbbbb;*/
+}
+
+.textboxmaroon14BDisabled {
+	border: 2px solid #771111;
+	padding-left:4px; 
+	padding-right:1px; 	
+	font-size: 14pt; 
+	font-weight: bold; 
+	font-family: arial, helvetica, sans-serif;
+	color: #771111; /* brown #551011 - maroon#770101; */
+	background-color: #dddddd;
+}
+
+
+.textboxmaroon16B {
+	border: 2px solid #771111;
+	padding-left:4px; 
+	padding-right:1px; 	
+	font-size: 16pt; 
+	font-weight: bold; 
+	font-family: arial, helvetica, sans-serif;
+	color: #771111; /* brown #551011 - maroon#770101; */
+	/*background-color: #bbbbbb;*/
+}
+
+.textboxmaroon16BDisabled {
+	border: 2px solid #771111;
+	padding-left:4px; 
+	padding-right:1px; 	
+	font-size: 16pt; 
+	font-weight: bold; 
+	font-family: arial, helvetica, sans-serif;
+	color: #771111; /* brown #551011 - maroon#770101; */
+	background-color: #dddddd;
+}
+
+
+
+.error	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #5C0101; 
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+
+/* Label for the input textfield */
+.labelsentence          { 
+	font-variant:small-caps;
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7pt; 
+	color: #00000; 
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+.labelsentence8          { 
+	font-variant:small-caps;
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #00000; 
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+
+.label	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #00000; 
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+.labelregular	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #00000; 
+	text-decoration:none; 
+	text-align: center }	
+	
+.labelunderlined	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #00000; 
+	font-weight: bold; 
+	text-decoration:underline; 
+	text-align: center }	
+
+.labelleftunderlined	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #00000; 
+	font-weight: bold; 
+	text-decoration:underline; 
+	text-align: left }
+	
+
+/* ------- WHITE ---------------- */
+.labelleftwhite8B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #FFFFFF; /* FONT white */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightwhite8B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #FFFFFF; /* FONT white */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterwhite8B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #FFFFFF; /* FONT white */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+
+.labelleftwhite10B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #FFFFFF; /* FONT white */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightwhite10B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #FFFFFF; /* FONT white */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterwhite10B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #FFFFFF; /* FONT white */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+
+.labelleftwhite12B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: #FFFFFF; /* FONT white */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightwhite12B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: #FFFFFF; /* FONT white */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterwhite12B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: #FFFFFF; /* FONT white */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+
+.labelleftwhite14B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 14pt; 
+	color: #FFFFFF; /* FONT white */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightwhite14B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 14pt; 
+	color: #FFFFFF; /* FONT white */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterwhite14B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 14pt; 
+	color: #FFFFFF; /* FONT white */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+/* ------- WHITE ---------------- */
+
+
+
+
+/* ------- BLACK ---------------- */
+.label	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #00000; 
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+.labelsmall	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7pt; 
+	color: #00000; 
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+.labelleft	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #00000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+
+.labelleftsmall	           { /* used in loginscrn */
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7pt; 
+	color: #00000; 
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }	
+
+.labelcenter	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #00000; 
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+
+.labelcenterblack	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #00000; 
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+
+.labelright	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #00000; 
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }
+	
+.labelrightsmall           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7pt; 
+	color: #00000; 
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+	
+.labelsmallulined	           { /* used in loginscrn */
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7pt; 
+	color: #00000; 
+	font-weight: bold; 
+	text-decoration:underline; 
+	text-align: center }
+	
+.labelregular	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #00000; 
+	text-decoration:none; 
+	text-align: center }	
+	
+.labelunderlined	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #00000; 
+	font-weight: bold; 
+	text-decoration:underline; 
+	text-align: center }	
+
+.labelleftunderlined	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #00000; 
+	font-weight: bold; 
+	text-decoration:underline; 
+	text-align: left }	
+	
+/* Label for the input textfield */
+.labelsentence          { 
+	font-variant:small-caps;
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7pt; 
+	color: #00000; 
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+.labelsentence8          { 
+	font-variant:small-caps;
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #00000; 
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+
+.labelleftblack1	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 1pt; 
+	color: #00000; /* FONT black */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: left }
+
+.labelleftblack1	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 1pt; 
+	color: #00000; /* FONT black */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: left }
+.labelcenterblack1	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 1pt; 
+	color: #00000; /* FONT black */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: center }	
+.labelleftblack2	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 2pt; 
+	color: #00000; /* FONT black */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: left }
+.labelcenterblack2	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 2pt; 
+	color: #00000; /* FONT black */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: center }
+.labelleftblack3	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 3pt; 
+	color: #00000; /* FONT black */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: left }
+.labelcenterblack3	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 3pt; 
+	color: #00000; /* FONT black */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: center }
+	
+.labelleftblack2B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 2pt; 
+	color: #00000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightblack2B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 2pt; 
+	color: #00000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterblack2B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 2pt; 
+	color: #00000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+
+.labelleftblack45	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 5.5px; 
+	color: #000000; /* FONT black */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: left }	
+
+.labelleftblack4	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 4pt; 
+	color: #000000; /* FONT black */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightblack4	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 4pt; 
+	color: #000000; /* FONT black */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterblack4	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 4pt; 
+	color: #000000; /* FONT black */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: center }
+.labelleftblack4U	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 4pt; 
+	color: #000000; /* FONT black */
+	font-weight: normal; 
+	text-decoration: underline; 
+	text-align: left }
+.labelrightblack4U	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 4pt; 
+	color: #000000; /* FONT black */
+	font-weight: normal; 
+	text-decoration: underline; 
+	text-align: right }	
+.labelcenterblack4U	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 4pt; 
+	color: #000000; /* FONT black */
+	font-weight: normal; 
+	text-decoration: underline; 
+	text-align: center }	
+.labelleftblack4B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 4pt; 
+	color: #00000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightblack4B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 4pt; 
+	color: #00000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterblack4B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 4pt; 
+	color: #00000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+
+
+.labelleftblack5	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 5pt; 
+	color: #000000; /* FONT black */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightblack5	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 5pt; 
+	color: #000000; /* FONT black */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterblack5	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 5pt; 
+	color: #000000; /* FONT black */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: center }
+.labelleftblack5U	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 5pt; 
+	color: #000000; /* FONT black */
+	font-weight: normal; 
+	text-decoration: underline; 
+	text-align: left }
+.labelrightblack5U	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 5pt; 
+	color: #000000; /* FONT black */
+	font-weight: normal; 
+	text-decoration: underline; 
+	text-align: right }	
+.labelcenterblack5U	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 5pt; 
+	color: #000000; /* FONT black */
+	font-weight: normal; 
+	text-decoration: underline; 
+	text-align: center }	
+.labelleftblack5B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 5pt; 
+	color: #00000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightblack5B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 5pt; 
+	color: #00000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterblack5B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 5pt; 
+	color: #00000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+
+
+.labelleftblack6U	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 6pt; 
+	color: #000000; /* FONT black */
+	font-weight: normal; 
+	text-decoration:underline; 
+	text-align: left }	
+.labelrightblack6U	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 6pt; 
+	color: #000000; /* FONT black */
+	font-weight: normal; 
+	text-decoration:underline; 
+	text-align: right }	
+.labelcenterblack6U	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 6pt; 
+	color: #000000; /* FONT black */
+	font-weight: normal; 
+	text-decoration:underline; 
+	text-align: center }		
+.labelleftblack6	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 6pt; 
+	color: #000000; /* FONT black */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: left }
+.labelcenterblack6	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 6pt; 
+	color: #000000; /* FONT black */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: center }	
+.labelleftblack6B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 6pt; 
+	color: #000000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightblack6B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 6pt; 
+	color: #000000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelrightblack6	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 6pt; 
+	color: #000000; /* FONT black */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterblack6B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 6pt; 
+	color: #000000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+.labelcenterblack6	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 6pt; 
+	color: #000000; /* FONT black */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: center }
+	
+.labelleftblack7	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7pt; 
+	color: #000000; /* FONT black */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: left }
+.labelcenterblack7	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7pt; 
+	color: #000000; /* FONT black */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: center }	
+.labelleftblack7B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7pt; 
+	color: #000000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightblack7B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7pt; 
+	color: #000000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelrightblack7        { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7pt; 
+	color: #000000; /* FONT black */
+	text-decoration:none; 
+	text-align: right }
+.labelcenterblack7B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7pt; 
+	color: #000000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }	
+.labelcenterblack7	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7pt; 
+	color: #000000; /* FONT black */
+	text-decoration:none; 
+	text-align: center }	
+
+
+.labelleftblack8	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #000000; /* FONT black */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: left }
+.labelcenterblack8	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #000000; /* FONT black */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: center }	
+.labelleftblack8B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #000000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightblack8B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #000000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterblack8B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #000000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+
+.labelleftblack9	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #000000; /* FONT black */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: left }
+.labelcenterblack9	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #000000; /* FONT black */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: center }	
+.labelleftblack9B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #00000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightblack9B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #00000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterblack9B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #00000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }	
+	
+.labelleftblack10B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #00000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightblack10B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #00000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterblack10B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #00000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }	
+	
+.labelleftblack11B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 11pt; 
+	color: #00000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightblack11B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 11pt; 
+	color: #00000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterblack11B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 11pt; 
+	color: #00000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+.labelleftblack12B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: #00000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightblack12B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: #00000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterblack12B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: #00000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+.labelleftblack14B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 14pt; 
+	color: #00000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightblack14B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 14pt; 
+	color: #00000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterblack14B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 14pt; 
+	color: #00000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }	
+	
+.labelleftblack16B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 16pt; 
+	color: #00000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightblack16B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 16pt; 
+	color: #00000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterblack16B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 16pt; 
+	color: #00000; /* FONT black */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+/* ------- BLACK ---------------- */	
+
+
+
+	
+/* ------- BROWN ---------------- */
+	
+.labelbrownsmall	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+	
+.labelbrownsmallcenter	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+
+.labelleftbrown	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #551011; /* brown #551011 */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+	
+.labelrightbrown	   { /* used in add class/subject */
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #551011; /* brown #551011 */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }
+	
+.labelcenterbrown	           {  /* used in printing gradesheets/grades/etc */
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #551011; /* brown #551011 */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+.labelleftbrown5	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 5pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: left }
+.labelcenterbrown5	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 5pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: center }	
+.labelleftbrown5B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 5pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightbrown5B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 5pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterbrown5B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 5pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+.labelleftbrown6	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 6pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: left }
+.labelcenterbrown6	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 6pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: center }	
+.labelleftbrown6B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 6pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightbrown6B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 6pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterbrown6B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 6pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+.labelleftbrown7	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: left }
+.labelcenterbrown7	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: center }	
+.labelleftbrown7B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightbrown7B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterbrown7B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }	
+
+.labelleftwhite8	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #FFFFFF; /*#551011;*/  /* FONT brown */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightwhite8	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #FFFFFF; /*#551011; FONT brown */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: right }
+.labelcenterwhite8	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #FFFFFF; /*#551011;   FONT brown */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: center }	
+
+
+
+.labelleftbrown8	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightbrown8	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: right }
+.labelcenterbrown8	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: center }	
+.labelleftbrown8B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightbrown8B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterbrown8B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+.labelleftbrown9	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: left }
+.labelcenterbrown9	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: center }	
+.labelleftbrown9B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightbrown9B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterbrown9B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }	
+	
+.labelleftbrown10B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightbrown10B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterbrown10B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }	
+	
+.labelleftbrown11B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 11pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightbrown11B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 11pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterbrown11B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 11pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+.labelleftbrown12B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightbrown12B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterbrown12B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+.labelleftbrown14B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 14pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightbrown14B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 14pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterbrown14B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 14pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }	
+	
+.labelleftbrown16B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 16pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightbrown16B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 16pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterbrown16B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 16pt; 
+	color: #551011;  /* FONT brown */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+/* ------- BROWN ---------------- */	
+
+	
+
+
+/* ------- DARK GREEN ---------------- */
+
+.labelrightgreen	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: 006633;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }
+	
+.labelleftgreen	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: 006633;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+	
+.labelcentergreen	{ /* used in curriculum edit */
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: 006633;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+
+	
+.labelleftgreen5B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 5pt; 
+	color: 006633;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightgreen5B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 5pt; 
+	color: 006633;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcentergreen5B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 5pt; 
+	color: 006633;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+.labelleftgreen6B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 6pt; 
+	color: 006633;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightgreen6B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 6pt; 
+	color: 006633;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcentergreen6B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 6pt; 
+	color: 006633;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+.labelleftgreen7B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7pt; 
+	color: 006633;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightgreen7B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7pt; 
+	color: 006633;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcentergreen7B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7pt; 
+	color: 006633;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+.labelleftgreen8B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: 006633;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightgreen8B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: 006633;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcentergreen8B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: 006633;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+
+.labelleftgreen9	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: 006633;  /* FONT dark green */
+	text-decoration:none; 
+	text-align: left }
+.labelrightgreen9	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: 006633;  /* FONT dark green */
+	text-decoration:none; 
+	text-align: right }	
+.labelcentergreen9	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: 006633;  /* FONT dark green */
+	text-decoration:none; 
+	text-align: center }
+	
+.labelleftgreen9B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: 006633;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightgreen9B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: 006633;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcentergreen9B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: 006633;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+.labelleftgreen10B           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: 006633;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightgreen10B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: 006633;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcentergreen10B           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: 006633;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+.labelleftgreen11B           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 11pt; 
+	color: 006633;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightgreen11B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 11pt; 
+	color: 00663;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcentergreen11B           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 11pt; 
+	color: 006633;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+.labelleftgreen12B           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: 006633;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightgreen12B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: 006633;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcentergreen12B           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: 006633;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+.labelleftgreen13B           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 13pt; 
+	color: 006633;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightgreen13B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 13pt; 
+	color: 006633;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcentergreen13B           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 13pt; 
+	color: 006633;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }	
+	
+.labelleftgreen14B           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 14pt; 
+	color: 006633;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightgreen14B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 14pt; 
+	color: 006633;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcentergreen14B           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 14pt; 
+	color: 006633;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }	
+	
+.labelleftgreen16B           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 16pt; 
+	color: 006633;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightgreen16B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 16pt; 
+	color: 006633;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcentergreen16B           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 16pt; 
+	color: 006633;  /* FONT dark green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+		
+/* ------- DARK GREEN ---------------- */	
+
+
+/* ------- LIGHT GREEN ---------------- */
+.labelleftlightgreen8B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #99FF66; /* FONT light green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightlightgreen8B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #99FF66; /* FONT light green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterlightgreen8B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #99FF66; /* FONT light green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+
+.labelleftlightgreen10B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #99FF66; /* FONT light green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightlightgreen10B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #99FF66; /* FONT light green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterlightgreen10B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #99FF66; /* FONT light green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+
+.labelleftlightgreen12B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: #99FF66; /* FONT light green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightlightgreen12B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: #99FF66; /* FONT light green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterlightgreen12B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: #99FF66; /* FONT light green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+
+.labelleftlightgreen14B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 14pt; 
+	color: #99FF66; /* FONT light green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightlightgreen14B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 14pt; 
+	color: #99FF66; /* FONT light green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterlightgreen14B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 14pt; 
+	color: #99FF66; /* FONT light green */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+/* ------- LIGHT GREEN ---------------- */
+
+
+/* ------- GOLD ---------------- */
+.labelleftgold8B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #FFCC00; /* FONT gold */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightgold8B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #FFCC00; /* FONT gold */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcentergold8B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #FFCC00; /* FONT gold */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+
+.labelleftgold10B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #FFCC00; /* FONT gold */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightgold10B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #FFCC00; /* FONT gold */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcentergold10B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #FFCC00; /* FONT gold */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+
+.labelleftgold12B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: #FFCC00; /* FONT gold */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightgold12B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: #FFCC00; /* FONT gold */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcentergold12B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: #FFCC00; /* FONT gold */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+
+.labelleftgold14B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 14pt; 
+	color: #FFCC00; /* FONT gold */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightgold14B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 14pt; 
+	color: #FFCC00; /* FONT gold */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcentergold14B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 14pt; 
+	color: #FFCC00; /* FONT gold */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+/* ------- GOLD ---------------- */
+
+
+	
+
+/* ------- RED ---------------- */
+.labelredsmall	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+
+.labelleftred	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #FF0000;  /* DARK RED #CD0000; */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }	
+	
+.labelcenterred	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #FF0000; 
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }	
+
+
+
+.labelleftred5B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 5pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightred5B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 5pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterred5B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 5pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }	
+
+.labelleftred6B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 6pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightred6B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 6pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterred6B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 6pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+		
+.labelleftred7          { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightred7	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterred7	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: center }
+.labelleftred7B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightred7B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterred7B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+.labelleftred8	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightred8	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterred8	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: center }
+.labelleftred8B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightred8B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterred8B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+.labelleftred9	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightred9	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterred9	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: center }
+.labelleftred9B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightred9B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterred9B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+.labelleftred10B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightred10B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterred10B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+
+.labelleftred11B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 11pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightred11B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 11pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterred11B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 11pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+.labelleftred12B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightred12B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterred12B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+
+.labelleftred13B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 13pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightred13B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 13pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterred13B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 13pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+.labelleftred14B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 14pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightred14B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 14pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterred14B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 14pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+.labelleftred15B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 15pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightred15B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 15pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterred15B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 15pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }	
+	
+.labelleftred16B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 16pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightred16B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 16pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterred16B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 16pt; 
+	color: #CD0000;  /* FONT red */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+/* ------- RED ---------------- */
+	
+	
+	
+	
+/* ------- BLUE ---------------- */		
+.labelbluesmall	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #0000FF;  /* FONT blue */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+	
+.labelcenterblue	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }	
+
+.labelcenterblueregular	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	text-decoration:none; 
+	text-align: center }
+
+
+.labelleftblue5B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 5pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightblue5B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 5pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterblue5B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 5pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }	
+
+.labelleftblue6B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 6pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightblue6B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 6pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterblue6B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 6pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+		
+.labelleftblue7B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightblue7B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterblue7B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+.labelleftblue8B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightblue8B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterblue8B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+.labelleftblue9B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightblue9B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterblue9B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+.labelleftblue10B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightblue10B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterblue10B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+
+.labelleftblue11B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 11pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightblue11B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 11pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterblue11B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 11pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+.labelleftblue12B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightblue12B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterblue12B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+
+.labelleftblue13B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 13pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightblue13B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 13pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterblue13B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 13pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+.labelleftblue14B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 14pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightblue14B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 14pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterblue14B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 14pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+.labelleftblue15B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 15pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightblue15B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 15pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterblue15B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 15pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }	
+	
+.labelleftblue16B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 16pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelrightblue16B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 16pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: right }	
+.labelcenterblue16B	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 16pt; 
+	color: #0000CD; /*royalblue(SVG) #4169E1 - mediumblue(SVG) #0000CD - darkblue(SVG) #00008B*/
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+	
+/* ------- BLUE ---------------- */
+
+
+
+
+/* ------- GREY ---------------- */
+
+.labelgreysmall	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #6B6B6B;  /* FONT grey */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+.labelgreysmall	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #FFFFFF;  /* FONT white */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+	
+/* ------- GREY ---------------- */
+	
+	
+	
+	
+/* ------- MAROON ---------------- */
+
+.textheadingmaroon		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 20pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-transform: uppercase;
+	text-decoration:none;
+	text-align: center }
+	
+.textsubheadingleftmaroon		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 13pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: left }	
+	
+.textsubsubheadingcentermaroon		{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 14pt; 
+	color:#551011; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: center }	
+
+.labelleftmaroon2		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 2pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: none; 
+	text-decoration:none;
+	text-align: left }
+.labelrightmaroon2		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 2pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: none; 
+	text-decoration:none;
+	text-align: right }	
+.labelcentermaroon2		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 2pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: none; 
+	text-decoration:none;
+	text-align: center }
+
+.labelleftmaroon3		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 3pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: none; 
+	text-decoration:none;
+	text-align: left }
+.labelrightmaroon3		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 3pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: none; 
+	text-decoration:none;
+	text-align: right }	
+.labelcentermaroon3		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 3pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: none; 
+	text-decoration:none;
+	text-align: center }	
+
+.labelleftmaroon5		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 5pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: none; 
+	text-decoration:none;
+	text-align: left }
+.labelrightmaroon5		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 5pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: none; 
+	text-decoration:none;
+	text-align: right }	
+.labelcentermaroon5		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 5pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: none; 
+	text-decoration:none;
+	text-align: center }
+.labelleftmaroon5B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 5pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: left }
+.labelrightmaroon5B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 5pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: right }	
+.labelcentermaroon5B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 5pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: center }	
+
+.labelleftmaroon6		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 6pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: none; 
+	text-decoration:none;
+	text-align: left }
+.labelrightmaroon6		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 6pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: none; 
+	text-decoration:none;
+	text-align: right }	
+.labelcentermaroon6		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 6pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: none; 
+	text-decoration:none;
+	text-align: center }
+.labelleftmaroon6B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 6pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: left }
+.labelrightmaroon6B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 6pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: right }	
+.labelcentermaroon6B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 6pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: center }	
+
+.labelleftmaroon7		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 7pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: none; 
+	text-decoration:none;
+	text-align: left }
+.labelrightmaroon7		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 7pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: none; 
+	text-decoration:none;
+	text-align: right }	
+.labelcentermaroon7		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 7pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: none; 
+	text-decoration:none;
+	text-align: center }	
+.labelleftmaroon7B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 7pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: left }
+.labelrightmaroon7B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 7pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: right }	
+.labelcentermaroon7B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 7pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: center }	
+	
+.labelleftmaroon8		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 8pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: none; 
+	text-decoration:none;
+	text-align: left }
+.labelrightmaroon8		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 8pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: none; 
+	text-decoration:none;
+	text-align: right }	
+.labelcentermaroon8		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 8pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: none; 
+	text-decoration:none;
+	text-align: center }	
+.labelleftmaroon8B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 8pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: left }
+.labelrightmaroon8B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 8pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: right }	
+.labelcentermaroon8B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 8pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: center }	
+
+.labelleftmaroon9		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 9pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: none; 
+	text-decoration:none;
+	text-align: left }
+.labelrightmaroon9		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 9pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: none; 
+	text-decoration:none;
+	text-align: right }	
+.labelcentermaroon9		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 9pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: none; 
+	text-decoration:none;
+	text-align: center }
+.labelleftmaroon9B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 9pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: left }
+.labelrightmaroon9B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 9pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: right }	
+.labelcentermaroon9B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 9pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: center }	
+
+.labelleftmaroon10B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 10pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: left }
+.labelrightmaroon10B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 10pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: right }	
+.labelcentermaroon10B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 10pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: center }	
+
+.labelleftmaroon11		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 11pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: none; 
+	text-decoration:none;
+	text-align: left }
+.labelrightmaroon11		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 11pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: none; 
+	text-decoration:none;
+	text-align: right }	
+.labelcentermaroon11		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 11pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: none; 
+	text-decoration:none;
+	text-align: center }
+.labelleftmaroon11B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 11pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: left }
+.labelrightmaroon11B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 11pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: right }	
+.labelcentermaroon11B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 11pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: center }
+
+.labelleftmaroon12		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 12pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: none; 
+	text-decoration:none;
+	text-align: left }
+.labelrightmaroon12		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 12pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: none; 
+	text-decoration:none;
+	text-align: right }	
+.labelcentermaroon12		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; /*Trebuchet MS, Verdana, Arial, Helvetica, sans-serif*/
+	font-size: 12pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: none; 
+	text-decoration:none;
+	text-align: center }
+.labelleftmaroon12B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 12pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: left }
+.labelrightmaroon12B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 12pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: right }	
+.labelcentermaroon12B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; /*Trebuchet MS, Verdana, Arial, Helvetica, sans-serif*/
+	font-size: 12pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: center }	
+
+.labelleftmaroon13B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 13pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: left }
+.labelrightmaroon13B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 13pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: right }	
+.labelcentermaroon13B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 13pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: center }
+
+.labelleftmaroon14B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 14pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: left }
+.labelrightmaroon14B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 14pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: right }	
+.labelcentermaroon14B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 14pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: center }	
+
+.labelleftmaroon15B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 15pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: left }
+.labelrightmaroon15B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 15pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: right }	
+.labelcentermaroon15B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 15pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: center }
+
+.labelleftmaroon16B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 16pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: left }
+.labelrightmaroon16B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 16pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: right }	
+.labelcentermaroon16B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 16pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: center }
+
+.labelleftmaroon20B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 20pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: left }
+.labelrightmaroon20B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 20pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: right }	
+.labelcentermaroon20B		{ 
+	font-family: Arial, helvetica, sans-serif, tahoma; 
+	font-size: 20pt; 
+	color:#770101; /* brown #551011 - maroon#770101; */
+	font-weight: bold; 
+	text-decoration:none;
+	text-align: center }
+	
+/* ------- MAROON ---------------- */
+
+	
+
+
+.value	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #5C0101; 
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+
+.buttonsave        { 
+	BORDER-RIGHT: #274E21 0px; 
+	BORDER-TOP: #274E21 0px; 
+	FONT-SIZE: 9pt; 
+	COLOR: #FFFFFF; 	
+	BORDER-LEFT: #274E21 0px;  
+	BORDER-BOTTOM: #274E21 0px; 
+	PADDING-RIGHT: 0px; 
+	PADDING-LEFT: 0px; 
+	PADDING-BOTTOM: 0px; 
+	PADDING-TOP: 0px; 
+	FONT-FAMILY: arial, helvetica, sans-serif; 
+	BACKGROUND-COLOR: #274E21 }
+
+.tableau           {
+	border-collapse: collapse; 
+	padding: 0; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	width: 900; }
+
+.tableauday        { 
+	/*border-collapse: collapse; */
+	border: 10px; 
+	adding: 0; 
+	text-align: center; 
+	margin: 0; 	
+	border-spacing: 0pt; 
+	height: 22; 
+	background-color: #5C0101; 
+	color: #FFFFFF; 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt; 
+	font-weight: bold; 
+	text-decoration:none; }
+
+.tableautime        {
+	background-color: #FFFFFF;  
+	border-collapse: collapse;
+	padding: 0px 5px 0px 5px; 	
+	text-align: center; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	height: 22; 
+	font-family: Arial, helvetica, sans-serif; 	
+	font-size: 9pt;}
+
+.tableautimebordered        {
+	background-color: #FFFFFF;  
+	/*border-collapse: collapse; */
+	border-width: 0.5px;
+	padding: 0px 5px 0px 5px; 	
+	text-align: center; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	height: 22; 
+	font-family: Arial, helvetica, sans-serif; 	
+	font-size: 9pt;}
+
+
+.tableauNonConflict { 
+	border-collapse: collapse; 
+	padding: 0; 
+	text-align: center; 
+	margin: 0; 
+	border-spacing: 0pt; 	
+	height: 22; 
+	background-color: #F4FEEE;  /*#F4F4F4; */
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt;}
+
+.tableauConflict { 
+	border-collapse: collapse; 
+	padding: 0; 
+	text-align: center; 
+	margin: 0; 
+	border-spacing: 0pt; 	
+	height: 22; 
+	background-color: #96323c; 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #FFFFFF}
+
+.tableauSpace       { 
+	border-collapse: collapse; 
+	padding: 0; 
+	text-align: center; 
+	margin: 0; 
+	border-spacing: 0pt; 	
+	height: 22; 
+	background-color: #FFFFFF; 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt;}
+
+.searchForm         {
+	border-collapse: collapse; 
+	border: 0px; 
+	padding: 0; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	text-align: center}
+
+.printtableau           {
+	border-collapse: collapse; 
+	padding: 0px; 
+	margin: 0; 
+	border-spacing: 0pt}
+
+.crsistable         {
+	border-collapse: collapse; 
+	border: 0px; 
+	padding: 0; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	text-align: center}	
+	
+.crsistablecolored         {
+	border-collapse: collapse; 
+	border: 50px; 	
+	padding: 3; 
+	spacing: 1;
+	margin: 1;
+	color: #567e3a;
+	border-color: #556B2F; /* YELLOW GREEN #567e3a - darkolivegreen(SVG) #556B2F*/
+	background-color: #ebeef7; /* LIGHT BLUE #ebeef7 */
+	border-spacing: 5pt; 
+	text-align: center}	
+	
+	
+	
+.centerpadding         {
+	border-collapse: collapse; 
+	border: 0px; 
+	padding: 0; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	text-align: center}	
+
+.crsisnotetext	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #5C0101; 
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+
+.crsistext	            { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #000000; 
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: left }
+
+.crsistextsmall	            { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #000000; 
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: left }
+
+.crsistextsmallnoalign	            { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #000000; 
+	font-weight: normal; 
+	text-decoration:none; }
+
+	
+.crsistextsmall7	            { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 7pt; 
+	color: #000000; 
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: left }	
+
+.crsistextsmall6	            { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 6pt; 
+	color: #000000; 
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: left }	
+
+.crsistextsmall5	            { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 5pt; 
+	color: #000000; 
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: left }	
+
+.text2	            { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #000000; 
+	font-weight: normal; 
+	text-decoration:none; 
+	text-align: left }
+
+.text3	            { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #FFFFFF; 
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+
+/*.logintd            { 
+	border-collapse: collapse; 
+	border: 0px; 
+	border-spacing: 0pt; 
+	background-color: #F4F4F4 }*/
+
+.logintd            { 
+	border-collapse: collapse; 
+	border: 0px; 
+	border-spacing: 0pt; 
+	background-color: #EEE0E5 } /*lavenderblush2 #EEE0E5 snow2 #EEE9E9*/
+
+
+/*the heading of each section - title*/
+.smallhead	    { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: #770101; 
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+
+.smallheadcenter	    { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: #770101; 
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: center }
+
+
+.smallheadred	    { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: #770101; 
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left }
+
+.textCancelled	    { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #000000; 
+	font-weight:bold; 
+	text-decoration: italics; 
+	text-align: left }
+
+
+.tablelegend {
+	border-collapse: collapse; 
+	padding: 0; 
+	margin: 0; 
+	border-spacing: 0pt}
+
+.legendNonConflict {
+	background-color: #F4FEEE; /*#F4F4F4; */
+	border: 1px}
+
+.legendConflict {
+	background-color: #96323c;  
+	border: 1px}
+
+.legend {
+	border: 0px; 
+	border-collapse: collapse; 
+	border-color: #FFFFFF }
+
+
+
+
+/*GRADES MODULE-------------------------------------*/
+
+.gradeLabel{
+	font-family: arial, helvetica, sans-serif;
+	font-size: 9pt;
+	color: maroon;
+	font-weight: bold;
+}
+
+.gradeData{
+	font-family: arial, helvetica, sans-serif;
+	font-size: 9pt;
+	color: black;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.nameOnGradeSheet{
+	font-family: arial, helvetica, sans-serif;
+	font-size: 8pt;
+	color: maroon;
+	text-transform: uppercase;
+}
+.gradeTextBox{
+	font-family: arial, helvetica, sans-serif;
+	font-size: 9pt;
+	color: maroon;
+	text-transform : uppercase;
+}
+.gradeTBox{
+	font-family: arial, helvetica, sans-serif;
+	font-size: 9pt;
+	color: maroon;
+	text-transform : uppercase;
+	font-weight:bold;
+}
+.numData{
+	font-family: arial, helvetica, sans-serif;
+	font-size: 8pt;
+	color: black;
+	text-transform: uppercase;
+}
+.TextBoxInput{
+	font-family: tahoma;
+	font-size: 9pt;
+	color: #802a2a;
+}
+.gradeHeader{
+	font-family: arial, helvetica, sans-serif;
+	font-size: 8pt;
+	color: #ffffff;
+	text-transform:uppercase;
+	font-weight:bold;
+	border-bottom: 2pt solid #FFFFFF;
+}
+.gradeButton {
+	background: #F2F2F2;
+	padding: 0px 0px 0px 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #551011;
+	font-size: 10pt;
+	font-weight: bold;
+	border-left: #ADADAD thin double;
+	border-top: #ADADAD thin double;
+	border-right: #737373 medium solid;
+	border-bottom: #737373 medium solid;
+        margin: 0px 0px 0px 0px;
+}
+
+.gradeButtonSmall {
+	background: #F2F2F2;
+	padding: 0px 0px 0px 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #551011;
+	font-size: 7pt;
+	font-weight: bold;
+	border-left: #ADADAD thin double;
+	border-top: #ADADAD thin double;
+	border-right: #737373 medium solid;
+	border-bottom: #737373 medium solid;
+}
+
+.menuButton {
+	background: #F2F2F2;
+	padding: 0px 0px 0px 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #551011;
+	font-size: 9pt;
+	font-weight: bold;
+	border-left: #ADADAD thin double;
+	border-top: #ADADAD thin double;
+	border-right: #737373 thin solid;
+	border-bottom: #737373 thin solid;
+        width:250;
+        height:27;
+        text-align: left;
+}
+
+.menuButtonCenter {
+	background: #F2F2F2;
+	padding: 0px 0px 0px 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #551011;
+	font-size: 9pt;
+	font-weight: bold;
+	border-left: #ADADAD thin double;
+	border-top: #ADADAD thin double;
+	border-right: #737373 thin solid;
+	border-bottom: #737373 thin solid;
+        width:250;
+        height:27;
+        text-align: center;
+}
+
+.menuButtonCenter30x150 {
+	background: #F2F2F2;
+	padding: 0px 0px 0px 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #551011;
+	font-size: 9pt;
+	font-weight: bold;
+	border-left: #ADADAD thin double;
+	border-top: #ADADAD thin double;
+	border-right: #737373 thin solid;
+	border-bottom: #737373 thin solid;
+        width:150;
+        height:30;
+        text-align: center;
+}
+
+.menuButtonCenter20x50 {
+        border: 1px solid maroon;
+	background-color: maroon;
+        border-collapse: collapse;
+	padding: 0px;
+        spacing: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	font-size: 8pt;
+	font-weight: bold;	
+        width:60px;
+        height:20px;
+        text-align: center;
+        text-valign: middle;
+}
+
+.spacer{clear:both; height:1px;}
+
+.menuButton60center {
+	background: #F2F2F2;
+	padding: 0px 0px 0px 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #551011;
+	font-size: 8pt;
+	font-weight: bold;
+	border-left: #ADADAD thin double;
+	border-top: #ADADAD thin double;
+	border-right: #737373 thin solid;
+	border-bottom: #737373 thin solid;
+        width:60;
+        height:25;
+        text-align: center;
+}
+
+.menuButton150center {
+	background: #F2F2F2;
+	padding: 0px 0px 0px 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #551011;
+	font-size: 8pt;
+	font-weight: bold;
+	border-left: #ADADAD thin double;
+	border-top: #ADADAD thin double;
+	border-right: #737373 thin solid;
+	border-bottom: #737373 thin solid;
+        width:150;
+        height:25;
+        text-align: center;
+}
+
+.addSubjectButton {
+	background: #F2F2F2;
+	padding: 0px 0px 0px 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #551011;
+	font-size: 8pt;
+	font-weight: bold;
+	border-left: #ADADAD thin double;
+	border-top: #ADADAD thin double;
+	border-right: #737373 thin solid;
+	border-bottom: #737373 thin solid;
+        width:40;
+        height:25;
+        text-align: center;
+}
+
+.loginButton {
+        border: 1px solid maroon;
+	background-color: maroon;
+        border-collapse: collapse;
+	padding: 0px;
+        spacing: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	font-size: 8pt;
+	font-weight: bold;	
+        width:40px;
+        height:23px;
+        text-align: center;
+        text-valign: middle;
+}
+
+
+.loginButton100 {
+        border: 1px solid maroon;
+	background-color: maroon;
+        border-collapse: collapse;
+	padding: 0px;
+        spacing: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	font-size: 8pt;
+	font-weight: bold;	
+        width:150px;
+        height:20px;
+        text-align: center;
+        text-valign: middle;
+}
+
+.textboxStyled {
+	background:#ffffff;
+	font:12pt;
+	font-family: arial, helvetica, sans-serif;
+	color:#006400;
+	font-weight:bold;
+	padding:2px 0px 0px 12px ;
+	border:3px #552121 solid;
+	height:30;
+}
+
+.textboxStyledSmall {
+	background:#ffffff;
+	font:3pt;
+	font-family: arial, helvetica, sans-serif;
+	color:#006400;
+	font-weight:bold;
+	padding:1px 0px 0px 1px ;
+	border:1px #552121 solid;	
+}
+
+.okButton{
+	background:#330000;
+	font:12pt;
+	font-family: arial, helvetica, sans-serif;
+	color:#ffffff;
+	font-weight:bold;
+	padding:2px 0px 0px 12px ;
+	border:2px #ffffff solid;
+	height:30;
+	font-variant: small-caps;
+}
+
+.gradeButtonStyled{
+	background:#660000;
+	font:5px;
+	font-family: arial, helvetica, sans-serif;
+	color:#FFCC66; /*#ffffff;*/
+	font-weight:bold;
+	padding:1px 0px 0px 1px ;
+	border:1px #EEE0E5 solid;	
+	height:23;
+	/*font-variant: small-caps;*/
+}
+
+.errorMsgs{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: red;  /* FONT brown */
+	font-weight: bold; 
+	text-decoration:none; 
+	text-align: left 
+}	
+
+
+.ComboBox{
+	position : absolute;
+	width:700px;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 8pt;
+	color: black;
+	font-variant: small-caps;
+}	
+
+.ComboBox2{
+	position : absolute;
+	width:40px;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 7pt;
+	color: black;
+	font-variant: small-caps; 
+}
+	
+table.TORtableheader{
+	border-left: none;
+	border-top: none; /*#ADADAD medium double;*/
+	border-right: none;
+	border-bottom: none; /*#ADADAD medium double;*/
+}
+
+table.TORtable{
+	border-collapse: collapse;
+	border-left: #551011 1px solid;
+	border-top: #551011 1px solid;
+	border-right: #551011 1px solid;
+	border-bottom: #551011 1px solid;
+        
+}	
+
+.bottomborder{
+	border-bottom:#000000 thin;
+	text-align:left;
+	font-size:9pt;
+	color: #552121;
+	font-weight:bold;
+	font-family:arial, helvetica;
+}
+
+/*this is for the copy of grades*/
+.cgheader{
+	border-left: none;
+	border-top: #000000 medium double;
+	border-right: #000000 thin solid;
+	border-bottom: none;
+}
+.cgrightheader{
+	border-left: none;
+	border-top: #000000 medium double;
+	border-right: none;
+	border-bottom: none;
+}
+.cg2ndheaderleft{
+	border-left: none;
+	border-top: #000000 thin solid;
+	border-right: #000000 thin solid;
+	border-bottom: #000000 thin solid;
+}
+.cg2ndheaderright{
+	border-left: none;
+	border-top: #000000 thin solid;
+	border-right: none;
+	border-bottom: #000000 thin solid;
+}
+.cgtitle{
+	border-left: #000000 thin solid;
+	border-top: none;
+	border-right: #000000 thin solid;
+	border-bottom: none;
+}
+.cgfinal{
+	border-left: none;
+	border-top: none;
+	border-right: #000000 thin solid;
+	border-bottom: none;
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #00000; 
+	text-decoration:none; 
+	text-align: center }
+
+
+
+/**************************************/
+/* for PreEnlistment and Confirmation ------------------------*/
+/**************************************/
+a:link.subjmenu	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration: none; }
+
+a:hover.subjmenu	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	color: #551011; /*#006400; dark green-maroon*/
+	text-decoration: none; }
+
+a:visited.subjmenu	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration: none; 
+	text-align: right; }
+
+.subjmenu		{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: #551011; /*maroon*/
+	font-weight: bold; 	
+	text-decoration:none }
+	
+.pclabel1	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #005263; /* up green */
+	text-decoration:none; 
+	text-align: center }
+
+.pclabell1	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #005263; /* up green */
+	text-decoration:none;}
+
+.pclabel2	           {
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: #005263; /* up green */
+	text-decoration:none; 
+	text-align: center }
+
+.pclabel3	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 14pt; 
+	color: #005263; /* up green */
+	text-decoration:none; 
+	text-align: center }
+
+.pclabelb1	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #005263; /* up green */
+	font-weight: bold;
+	text-decoration:none; 
+	text-align: center }	
+
+.pclabelb2	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: #005263; /* up green */
+	font-weight: bold;
+	text-decoration:none; 
+	text-align: center }	
+
+.pclabelb3	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 14pt; 
+	color: #005263; /* up green */
+	font-weight: bold;
+	text-decoration:none; 
+	text-align: center }	
+
+
+
+.pctlabel	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #005263; /* up green */
+	text-decoration:none; 
+	text-align: center }
+
+.pctlabell	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #005263; /* up green */
+	text-decoration:none; 
+	text-align: left }
+
+
+.pctlabelbold	           { 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #005263; /* up green */
+	font-weight: bold;
+	text-decoration:none; 
+	text-align: center }
+	
+.pctheader{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #FFFFFF; /* white */
+	font-weight: bold;
+	text-decoration:none; 
+	background-color: #005263; /* up green */
+	text-align: center }
+
+/*main and submenu */
+
+a:link.menu1	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration: none; }
+
+a:hover.menu1	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	color: #551011; /*#006400; dark green-maroon*/
+	color: #FFFFFF; /*#006400; dark green-white*/
+	background-color: #005263; /* up green */
+	text-decoration: none; }
+
+a:visited.menu1	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration: none; 
+	text-align: right; }
+
+.menu1		{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #005263; /* up green */
+	font-weight: bold;
+	text-decoration:none }
+	
+a:link.menu2	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration: none; }
+a:hover.menu2	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	color: #551011; /*#006400; dark green-maroon*/
+	color: #FFFFFF; /*#006400; dark green-maroon*/
+	background-color: #005263; /* up green */
+	text-decoration: none; }
+a:visited.menu2	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration: none; 
+	text-align: right; }	
+.menu2		{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt;
+	color: #005263; /* up green */
+	font-weight: bold; 	
+	text-decoration:none }
+
+/* smallest link */
+a:link.menu3	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration: none; }
+a:hover.menu3	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	color: #551011; /*#006400; dark green-maroon*/
+	color: #FFFFFF; /*#006400; dark green-maroon*/
+	background-color: #005263; /* up green */
+	text-decoration: none; }
+a:visited.menu3	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration: none; 
+	text-align: right; }	
+.menu3		{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 5pt;
+	color: #00000;
+	font-weight: bold; 	
+	text-decoration:none }
+	
+	
+/* buttons */
+
+a:link.menugreen	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration: none; }
+
+a:hover.menugreen 	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	color: #FFFFFF;  
+	background-color: #551011; /* maroon*/
+	text-decoration: none; }
+
+a:visited.menugreen	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration: none; 
+	text-align: right; }
+
+.menugreen	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 12pt; 
+	color: #FFFFFF; 
+	font-weight: bold;
+	background-color: #005263;  /* up green */
+	text-decoration:none }
+	
+.pcbutton2{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 9pt; 
+	color: #FFFFFF; 
+	font-weight: bold;
+	background-color: #005263;  /* up green */
+	text-decoration:none }
+
+
+/* errors */
+.pcerrlabel1	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 11pt; 
+	color: "#FF0000"; /* red */
+	font-weight: bold;
+	text-decoration:none; 
+	text-align: center }
+
+
+
+a:link.menumaroon10	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration: none; }
+a:hover.menumaroon10	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	color:#770101; /*#006400; dark green-maroon*/
+	text-decoration: none; }
+a:visited.menumaroon10	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration: none; 
+	text-align: right; }
+.menumaroon10		{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 10pt; 
+	color: #551011; /*maroon*/
+	font-weight: bold; 	
+	text-decoration:none }
+	
+a:link.menumaroon8	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration: none; }
+a:hover.menumaroon8	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	color:#770101; /*#006400; dark green-maroon*/
+	text-decoration: none; }
+a:visited.menumaroon8	{ 
+	font-family: Arial, helvetica, sans-serif; 
+	text-decoration: none; 
+	text-align: right; }
+.menumaroon8		{ 
+	font-family: Arial, helvetica, sans-serif; 
+	font-size: 8pt; 
+	color: #551011; /*maroon*/
+	font-weight: bold; 	
+	text-decoration:underline }	
+	
+	
+.footer_shadow {
+	background: url(../images/crsf_03.jpg) repeat-x;
+	height: 100px;
+	width: 100%; /*780px;*/
+	margin: 0;
+	padding: 0;
+	border: 0px;
+}	
+
+.footer_shadow2  { 
+	border-collapse: collapse; 
+	border: 0px; 
+	padding: 0; 
+	margin: 0; 
+	border-spacing: 0pt; 
+	width: 100%; 
+	height: 60; 
+	background-color:  #828282; }
+
+
+
+.badge {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: #999999;
+  border-radius: 10px;
+}
+
+.badge-danger {
+  background-color: #d43f3a;
+}
+
+.badge-warning {
+  background-color: #d58512;
+}
+
+.badge-success {
+  background-color: #398439;
+}
+
+.badge-info {
+  background-color: #269abc;
+}
+
+.badge-inverse {
+  background-color: #333333;
+}
+
+.badge-crs {
+  background-color: #F09999;
+}
+
+
+
+.badgenone {
+  display: inline-block;
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1;
+  color: #EEE0E5;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  background-color: #999999;
+  border-radius: 10px;
+}
+
+.badge-none {
+  background-color: #EEE0E9; /*lavenderblush2 #EEE0E5 snow2 #EEE9E9*/
+}
+/*--------------- */
