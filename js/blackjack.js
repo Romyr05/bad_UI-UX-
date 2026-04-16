@@ -77,6 +77,8 @@
         this.callbacks = callbacks || {};
         this.active = false;
         this.state = null;
+        this.series = null;
+        this.roundTimer = null;
         this.cache();
         this.bind();
     }
@@ -92,8 +94,6 @@
         this.status = this.root.querySelector("[data-blackjack-status]");
         this.hitButton = this.root.querySelector("[data-blackjack-hit]");
         this.standButton = this.root.querySelector("[data-blackjack-stand]");
-        this.replayButton = this.root.querySelector("[data-blackjack-replay]");
-        this.cancelButton = this.root.querySelector("[data-blackjack-cancel]");
     };
 
     BlackjackGate.prototype.bind = function () {
@@ -104,32 +104,55 @@
         this.standButton.addEventListener("click", function () {
             self.stand();
         });
-        this.replayButton.addEventListener("click", function () {
-            self.startRound();
-        });
-        this.cancelButton.addEventListener("click", function () {
-            self.close();
-            if (self.callbacks.onCancel) {
-                self.callbacks.onCancel();
-            }
-        });
     };
 
     BlackjackGate.prototype.open = function (context) {
         this.context = context || {};
         this.active = true;
         this.title.textContent = context.title || "Blackjack Verification";
-        this.subtitle.textContent = context.subtitle || "Win one round to continue.";
+        this.subtitle.textContent = context.subtitle || "Win 2 out of 3.";
         this.overlay.classList.add("active");
+        this.series = {
+            wins: 0,
+            losses: 0,
+            rounds: 0
+        };
         this.startRound();
     };
 
     BlackjackGate.prototype.close = function () {
         this.active = false;
+        if (this.roundTimer) {
+            window.clearTimeout(this.roundTimer);
+            this.roundTimer = null;
+        }
         this.overlay.classList.remove("active");
     };
 
+    BlackjackGate.prototype.updateSubtitle = function () {
+        if (!this.series) {
+            return;
+        }
+        this.subtitle.textContent =
+            "Win 2 out of 3. " +
+            "W:" + this.series.wins + " L:" + this.series.losses + " R:" + this.series.rounds + "/3";
+    };
+
+    BlackjackGate.prototype.resetSeries = function () {
+        this.series = {
+            wins: 0,
+            losses: 0,
+            rounds: 0
+        };
+        this.updateSubtitle();
+    };
+
     BlackjackGate.prototype.startRound = function () {
+        if (this.roundTimer) {
+            window.clearTimeout(this.roundTimer);
+            this.roundTimer = null;
+        }
+
         var deck = createDeck();
         this.state = {
             deck: deck,
@@ -140,9 +163,9 @@
         };
 
         this.status.className = "blackjack-status";
-        this.status.textContent = "Your verification round has started. Beat the dealer to unlock submit.";
+        this.status.textContent = "";
         this.setButtons(true);
-        this.replayButton.disabled = true;
+        this.updateSubtitle();
         this.render(false);
 
         if (handValue(this.state.player) === 21) {
@@ -153,7 +176,6 @@
     BlackjackGate.prototype.setButtons = function (playing) {
         this.hitButton.disabled = !playing;
         this.standButton.disabled = !playing;
-        this.cancelButton.disabled = playing;
     };
 
     BlackjackGate.prototype.draw = function (hand) {
@@ -169,7 +191,7 @@
         this.render(false);
 
         if (handValue(this.state.player) > 21) {
-            this.finish("loss", "Bust. You went over 21, so submit stays locked.");
+            this.finish("loss");
         }
     };
 
@@ -186,30 +208,54 @@
         var dealerTotal = handValue(this.state.dealer);
 
         if (dealerTotal > 21 || playerTotal > dealerTotal) {
-            this.finish("win", "You beat the dealer. Submit is now unlocked.");
+            this.finish("win");
             return;
         }
 
         if (playerTotal < dealerTotal) {
-            this.finish("loss", "Dealer wins this round. Play again to continue.");
+            this.finish("loss");
             return;
         }
 
-        this.finish("push", "Push. A tie does not unlock submit, so you need another round.");
+        this.finish("loss");
     };
 
-    BlackjackGate.prototype.finish = function (result, message) {
+    BlackjackGate.prototype.finish = function (result) {
         this.state.finished = true;
         this.state.result = result;
         this.render(true);
         this.setButtons(false);
-        this.replayButton.disabled = false;
         this.status.className = "blackjack-status " + result;
-        this.status.textContent = message;
+        this.status.textContent = result === "win" ? "WIN" : "LOSE";
 
-        if (result === "win" && this.callbacks.onWin) {
-            this.callbacks.onWin(this.context || {});
+        if (!this.series) {
+            this.resetSeries();
         }
+
+        this.series.rounds += 1;
+        if (result === "win") {
+            this.series.wins += 1;
+        } else {
+            this.series.losses += 1;
+        }
+        this.updateSubtitle();
+
+        if (this.series.wins >= 2) {
+            if (this.callbacks.onWin) {
+                this.roundTimer = window.setTimeout(this.callbacks.onWin.bind(this, this.context || {}), 700);
+            }
+            return;
+        }
+
+        if (this.series.losses >= 2 || this.series.rounds >= 3) {
+            this.roundTimer = window.setTimeout(function () {
+                this.resetSeries();
+                this.startRound();
+            }.bind(this), 1200);
+            return;
+        }
+
+        this.roundTimer = window.setTimeout(this.startRound.bind(this), 900);
     };
 
     BlackjackGate.prototype.render = function (revealDealer) {
