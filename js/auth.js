@@ -44,7 +44,7 @@
                 '<div class="blackjack-modal">' +
                     '<div class="blackjack-topbar">' +
                         '<h2 data-blackjack-title>Blackjack Verification</h2>' +
-                        '<p data-blackjack-subtitle>Win one round to continue.</p>' +
+                        '<p data-blackjack-subtitle>Win 2 out of 3.</p>' +
                     "</div>" +
                     '<div class="blackjack-body">' +
                         '<div class="blackjack-table">' +
@@ -61,11 +61,8 @@
                             '<div class="blackjack-controls">' +
                                 '<button type="button" class="blackjack-button" data-blackjack-hit>Hit</button>' +
                                 '<button type="button" class="blackjack-button" data-blackjack-stand>Stand</button>' +
-                                '<button type="button" class="blackjack-button" data-blackjack-replay>Replay Round</button>' +
-                                '<button type="button" class="blackjack-button" data-blackjack-cancel>Cancel</button>' +
                             "</div>" +
                             '<div class="blackjack-status" data-blackjack-status></div>' +
-                            '<div class="blackjack-note">Only a win unlocks your submit action. Losses and ties require another round.</div>' +
                         "</div>" +
                     "</div>" +
                 "</div>" +
@@ -124,11 +121,11 @@
                     String(day).padStart(2, "0")
                 ].join("-");
                 preview.className = "science-preview";
-                preview.textContent = "Date resolved: " + hidden.value + ". The fake sign-up system is satisfied for now.";
+                preview.textContent = "Date resolved: " + hidden.value ;
             } else {
                 hidden.value = "";
                 preview.className = "science-preview invalid";
-                preview.textContent = "Date unstable. Keep adjusting the mantissas and exponents until the birthday becomes valid.";
+                preview.textContent = "Date unstable....";
             }
         }
 
@@ -159,9 +156,25 @@
             driftY: 0,
             wobble: 0
         };
+        var lockedSpeed = 100;
+
+        function getFieldLimit(input) {
+            if (!input || input.maxLength < 0) {
+                return null;
+            }
+            return input.maxLength;
+        }
 
         function updateSpeedLabel() {
-            speedLabel.textContent = speedInput.value + " RPM-ish";
+            if (speedInput) {
+                speedInput.value = String(lockedSpeed);
+                speedInput.setAttribute("value", String(lockedSpeed));
+                speedInput.disabled = true;
+                speedInput.title = "The wind is permanently stuck at 100 RPM.";
+            }
+            if (speedLabel) {
+                speedLabel.textContent = lockedSpeed + " RPM forever hehehe blee";
+            }
         }
 
         function setActiveField(name) {
@@ -202,18 +215,25 @@
                     return;
                 }
                 if (action === "space") {
+                    if (getFieldLimit(activeInput) !== null && value.length >= getFieldLimit(activeInput)) {
+                        return;
+                    }
                     activeInput.value = value + " ";
                     return;
                 }
 
-                activeInput.value = value + action;
+                if (getFieldLimit(activeInput) !== null && value.length >= getFieldLimit(activeInput)) {
+                    return;
+                }
+
+                activeInput.value = (value + action).slice(0, getFieldLimit(activeInput) || undefined);
             });
         });
 
         shell.addEventListener("mousemove", function (event) {
             var shellRect = shell.getBoundingClientRect();
             var keyboardRect = keyboard.getBoundingClientRect();
-            var speed = parseInt(speedInput.value, 10);
+            var speed = lockedSpeed;
             var cursorX = event.clientX;
             var cursorY = event.clientY;
             var keyboardCenterX = keyboardRect.left + keyboardRect.width / 2;
@@ -237,12 +257,17 @@
             state.driftY *= 0.35;
         });
 
-        speedInput.addEventListener("input", updateSpeedLabel);
+        if (speedInput) {
+            speedInput.addEventListener("input", function () {
+                speedInput.value = String(lockedSpeed);
+                updateSpeedLabel();
+            });
+        }
         updateSpeedLabel();
         setActiveField(fieldContainers[0].getAttribute("data-fan-field"));
 
         (function animate() {
-            var speed = parseInt(speedInput.value, 10);
+            var speed = lockedSpeed;
             var time = Date.now() / 280;
             var drift = Math.sin(time * (speed / 40 + 0.5)) * (speed / 6);
             var bob = Math.cos(time * (speed / 55 + 0.5)) * (speed / 14);
@@ -294,9 +319,6 @@
                 window.setTimeout(function () {
                     window.location.href = form.getAttribute("data-crs-target");
                 }, 700);
-            },
-            onCancel: function () {
-                setStatus(statusNode, "Submit canceled. The bad interface still needs a Blackjack win before it will continue.", "warning");
             }
         });
 
@@ -305,18 +327,16 @@
 
             var invalidField = validateRequired(form);
             if (invalidField) {
-                setStatus(statusNode, "Complete the weird required fields first before the Blackjack gate will open.", "error");
+                setStatus(statusNode, "COMPLETE THE GIVEN REQUEST", "error");
                 invalidField.focus();
                 return;
             }
 
             pendingData = serializeForm(form);
-            setStatus(statusNode, "Submit captured. Win one round of Blackjack to unlock the next step.", "");
+            setStatus(statusNode, "Submit captured. Win 2 out of 3 Blackjack rounds to unlock the next step.", "");
             gate.open({
                 title: "Blackjack Verification for " + roleLabel(role) + " " + (mode === "signup" ? "Sign-up" : "Log-in"),
-                subtitle: mode === "signup"
-                    ? "Win one round to turn this fake sign-up into a fake success."
-                    : "Win one round to leave this bad login and continue to CRS."
+                subtitle: "Win 2 out of 3."
             });
         });
     }
