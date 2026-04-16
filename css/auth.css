@@ -47,6 +47,39 @@ body.auth-body {
     gap: 0;
 }
 
+.auth-chaos .auth-form-table,
+.auth-chaos .auth-form-table tbody,
+.auth-chaos .auth-form-table tr,
+.auth-chaos .auth-form-table td {
+    display: block;
+    width: auto;
+}
+
+.auth-chaos .auth-form-table tr {
+    margin: 0 0 18px;
+}
+
+.auth-chaos .auth-form-table tr:nth-child(odd) {
+    width: 83%;
+    margin-left: 7%;
+    transform: rotate(-1.1deg);
+}
+
+.auth-chaos .auth-form-table tr:nth-child(even) {
+    width: 92%;
+    margin-left: -2%;
+    transform: rotate(1.4deg);
+}
+
+.auth-chaos .auth-form-table td:first-child {
+    width: 36%;
+    margin-bottom: 5px;
+}
+
+.auth-chaos .auth-form-table td:last-child {
+    width: 100%;
+}
+
 .auth-chaos .auth-card,
 .auth-chaos .auth-side-card {
     border: 0;
@@ -369,7 +402,6 @@ body.auth-body {
 }
 
 .signup-chaos .scientific-picker::before {
-    content: "CALIBRATE BIRTHDAY";
     display: inline-block;
     margin: 0 0 14px 18px;
     padding: 3px 9px;
@@ -407,13 +439,14 @@ body.auth-body {
 }
 
 .auth-chaos .scientific-grid {
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 13px 29px;
 }
 
 .signup-chaos .scientific-grid {
-    grid-template-columns: 1.1fr 0.8fr 1.25fr;
-    gap: 17px 9px;
+    gap: 9px 21px;
 }
 
 .science-cell {
@@ -425,6 +458,22 @@ body.auth-body {
 .auth-chaos .science-cell {
     min-height: 240px;
     padding: 18px 16px 22px;
+}
+
+.auth-chaos .science-cell:nth-child(1) {
+    width: 29%;
+    margin-left: 4%;
+}
+
+.auth-chaos .science-cell:nth-child(2) {
+    width: 38%;
+    margin-top: 27px;
+}
+
+.auth-chaos .science-cell:nth-child(3) {
+    width: 21%;
+    margin-left: 10%;
+    margin-top: -11px;
 }
 
 .signup-chaos .science-cell {
@@ -619,12 +668,37 @@ body.auth-body {
     margin-bottom: 14px;
 }
 
+.auth-chaos .fan-head {
+    display: block;
+    position: relative;
+    min-height: 122px;
+    margin-bottom: 8px;
+    transform: rotate(-0.8deg);
+}
+
 .fan-meter {
     min-width: 160px;
 }
 
+.auth-chaos .fan-meter {
+    width: 240px;
+    min-width: 0;
+    margin-left: auto;
+    margin-right: 3%;
+    margin-top: -6px;
+    transform: rotate(2.8deg) translateY(10px);
+}
+
+.auth-chaos .fan-head > div:first-child {
+    width: 57%;
+    margin-left: 1%;
+    transform: rotate(-1.4deg) translateX(9px);
+}
+
 .fan-meter input[type="range"] {
     width: 100%;
+    pointer-events: none;
+    accent-color: #8b0000;
 }
 
 .fan-meter-value {
@@ -643,8 +717,10 @@ body.auth-body {
 }
 
 .auth-chaos .fan-fields {
-    gap: 18px;
-    margin-bottom: 20px;
+    display: block;
+    position: relative;
+    min-height: 166px;
+    margin-bottom: 22px;
 }
 
 .fan-field {
@@ -658,9 +734,88 @@ body.auth-body {
     box-shadow: 0 0 0 2px #f6dfca inset;
 }
 
+.auth-chaos .fan-field:nth-child(1) {
+    width: 29%;
+    margin-left: 4%;
+    margin-top: 11px;
+    transform: rotate(-2.6deg);
+}
+
+.auth-chaos .fan-field:nth-child(2) {
+    width: 48%;
+    margin-left: 37%;
+    margin-top: -6px;
+    transform: rotate(1.8deg);
+}
+
+.auth-chaos .fan-field:nth-child(3) {
+    width: 27%;
+    margin-left: 17%;
+    margin-top: 22px;
+    transform: rotate(-1.5deg);
+}
+
+.auth-chaos .fan-field:nth-child(4) {
+    width: 34%;
+    margin-left: 52%;
+    margin-top: -14px;
+    transform: rotate(2.9deg);
+}
+
 .fan-field button {
     width: 100%;
     margin-bottom: 8px;
+}
+
+.auth-chaos .fan-field {
+    display: block;
+    position: relative;
+}
+
+.auth-chaos .fan-field button {
+    width: auto;
+    min-width: 58%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.auth-chaos .fan-field:nth-child(odd) button {
+    margin-left: -7px;
+    transform: rotate(1.7deg);
+}
+
+.auth-chaos .fan-field:nth-child(even) button {
+    margin-left: 23px;
+    transform: rotate(-1.5deg);
+}
+
+.auth-chaos .fan-field input {
+    display: block;
+    width: 81%;
+}
+
+.auth-chaos .fan-field:nth-child(1) input {
+    width: 73%;
+    margin-left: 6px;
+    transform: rotate(-1deg);
+}
+
+.auth-chaos .fan-field:nth-child(2) input {
+    width: 109%;
+    margin-left: -3px;
+    transform: rotate(0.7deg);
+}
+
+.auth-chaos .fan-field:nth-child(3) input {
+    width: 88%;
+    margin-left: 14px;
+    transform: rotate(-1.6deg);
+}
+
+.auth-chaos .fan-field:nth-child(4) input {
+    width: 96%;
+    margin-left: 31px;
+    transform: rotate(1.2deg);
 }
 
 .fan-value {
@@ -673,7 +828,7 @@ body.auth-body {
     min-height: 224px;
     border: 1px solid #b8c6a5;
     background: #eef4e3;
-    overflow: hidden;
+    overflow: visible;
 }
 
 .auth-chaos .fan-keyboard-shell {
@@ -690,6 +845,11 @@ body.auth-body {
 
 .auth-chaos .fan-keyboard-shell.hostile {
     min-height: 460px;
+    overflow: visible;
+    width: 83%;
+    margin-left: -1%;
+    margin-top: 34px;
+    transform: rotate(-1.8deg) skewX(-2deg);
 }
 
 .fan-gust {
@@ -768,6 +928,36 @@ body.auth-body {
     top: 78px;
 }
 
+.layout-a.auth-chaos .hostile .fan-swirl {
+    left: calc(50% - 11px);
+    top: 54px;
+}
+
+.layout-b.auth-chaos .hostile .fan-swirl {
+    left: calc(50% - 28px);
+    top: 62px;
+}
+
+.layout-c.auth-chaos .hostile .fan-swirl {
+    left: calc(50% + 16px);
+    top: 49px;
+}
+
+.layout-d.auth-chaos .hostile .fan-swirl {
+    left: calc(50% - 44px);
+    top: 67px;
+}
+
+.layout-e.auth-chaos .hostile .fan-swirl {
+    left: calc(50% + 22px);
+    top: 58px;
+}
+
+.layout-f.auth-chaos .hostile .fan-swirl {
+    left: calc(50% - 6px);
+    top: 50px;
+}
+
 .fan-swirl::before,
 .fan-swirl::after {
     content: "";
@@ -802,34 +992,149 @@ body.auth-body {
 }
 
 .auth-chaos .hostile .fan-keyboard {
-    left: calc(50% - 390px);
-    top: 116px;
-    width: 780px;
+    left: calc(50% - 352px);
+    top: 64px;
+    width: 894px;
     gap: 14px;
 }
 
 .layout-a.auth-chaos .hostile .fan-keyboard {
-    top: 108px;
+    left: calc(50% - 418px);
+    top: 48px;
+    width: 932px;
 }
 
 .layout-b.auth-chaos .hostile .fan-keyboard {
-    top: 100px;
+    left: calc(50% - 307px);
+    top: 36px;
+    width: 820px;
 }
 
 .layout-c.auth-chaos .hostile .fan-keyboard {
-    top: 124px;
+    left: calc(50% - 379px);
+    top: 52px;
+    width: 962px;
 }
 
 .layout-d.auth-chaos .hostile .fan-keyboard {
-    top: 94px;
+    left: calc(50% - 435px);
+    top: 50px;
+    width: 998px;
 }
 
 .layout-e.auth-chaos .hostile .fan-keyboard {
-    top: 118px;
+    left: calc(50% - 274px);
+    top: 1px;
+    width: 760px;
 }
 
 .layout-f.auth-chaos .hostile .fan-keyboard {
-    top: 104px;
+    left: calc(50% - 401px);
+    top: 38px;
+    width: 918px;
+}
+
+.layout-a.auth-chaos .science-cell:nth-child(1) {
+    width: 34%;
+    margin-left: -1%;
+}
+
+.layout-a.auth-chaos .science-cell:nth-child(2) {
+    width: 24%;
+    margin-left: 11%;
+}
+
+.layout-a.auth-chaos .science-cell:nth-child(3) {
+    width: 32%;
+    margin-left: 18%;
+}
+
+.layout-b.auth-chaos .fan-field:nth-child(1) {
+    width: 24%;
+    margin-left: 12%;
+}
+
+.layout-b.auth-chaos .fan-field:nth-child(2) {
+    width: 42%;
+    margin-left: 43%;
+}
+
+.layout-c.auth-chaos .auth-form-table tr:nth-child(odd) {
+    width: 91%;
+    margin-left: -3%;
+}
+
+.layout-c.auth-chaos .auth-form-table tr:nth-child(even) {
+    width: 74%;
+    margin-left: 16%;
+}
+
+.layout-d.auth-chaos .science-cell:nth-child(1) {
+    width: 23%;
+    margin-left: 14%;
+}
+
+.layout-d.auth-chaos .science-cell:nth-child(2) {
+    width: 48%;
+    margin-top: 34px;
+}
+
+.layout-e.auth-chaos .fan-field:nth-child(3) {
+    width: 35%;
+    margin-left: 4%;
+}
+
+.layout-e.auth-chaos .fan-field:nth-child(4) {
+    width: 30%;
+    margin-left: 56%;
+}
+
+.layout-a.auth-chaos .fan-fields {
+    min-height: 175px;
+}
+
+.layout-c.auth-chaos .fan-field:nth-child(1) {
+    width: 36%;
+    margin-left: 9%;
+}
+
+.layout-c.auth-chaos .fan-field:nth-child(2) {
+    width: 33%;
+    margin-left: 48%;
+}
+
+.layout-d.auth-chaos .fan-fields {
+    min-height: 184px;
+}
+
+.layout-d.auth-chaos .fan-field:nth-child(1) {
+    width: 26%;
+    margin-left: 8%;
+}
+
+.layout-d.auth-chaos .fan-field:nth-child(2) {
+    width: 37%;
+    margin-left: 46%;
+}
+
+.layout-f.auth-chaos .fan-field:nth-child(1) {
+    width: 33%;
+    margin-left: 2%;
+}
+
+.layout-f.auth-chaos .fan-field:nth-child(2) {
+    width: 43%;
+    margin-left: 42%;
+}
+
+.layout-f.auth-chaos .auth-form-table tr:nth-child(odd) {
+    width: 76%;
+    margin-left: 14%;
+}
+
+.layout-f.auth-chaos .auth-form-table tr:nth-child(even) {
+    width: 97%;
+    margin-left: -4%;
 }
 
 .fan-key {
@@ -845,6 +1150,22 @@ body.auth-body {
 .auth-chaos .hostile .fan-key {
     padding: 16px 10px;
     font-size: 17px;
+}
+
+.auth-chaos .hostile .fan-key:nth-child(odd) {
+    transform: rotate(-2.2deg) translateY(-6px);
+}
+
+.auth-chaos .hostile .fan-key:nth-child(even) {
+    transform: rotate(2.7deg) translateY(11px);
+}
+
+.auth-chaos .hostile .fan-key:nth-child(3n) {
+    transform: rotate(-4deg) translateY(18px);
+}
+
+.auth-chaos .hostile .fan-key:nth-child(5n) {
+    transform: rotate(3.6deg) translateY(-12px);
 }
 
 .hostile .fan-key:hover {
