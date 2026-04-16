@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+    <META HTTP-EQUIV="Content-Language" CONTENT="en-us">
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+    <META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+    <LINK REL="StyleSheet" TYPE="text/css" HREF="./css/crsis.css">
+    <LINK REL="StyleSheet" TYPE="text/css" HREF="./css/auth.css">
+    <TITLE>UPV CRSIS - Student Log-in</TITLE>
+</HEAD>
+<BODY class="body auth-body">
+    <TABLE class="crsistable auth-shell">
+        <tr background="./images/crsh_02.jpg">
+            <td class="maintd1" align="left"><img border="0" src="./images/crsh_01.jpg" width="336" height="125"></td>
+            <td colspan="2" class="maintd2"><img border="0" src="./images/crsh_03.jpg" width="500" height="125"></td>
+        </tr>
+        <tr>
+            <td align="left"><img border="0" src="./images/crsh_04.jpg" width="336" height="25"></td>
+            <td colspan="2" class="maintd4">
+                <span class="menu">
+                    <a class="menu" href="./index.html"><u>Home</u></a> &nbsp;&nbsp;&nbsp;&nbsp; . &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="menu" href="./student-signup.html"><u>Student Sign Up</u></a> &nbsp;&nbsp;&nbsp;&nbsp; . &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="menu" href="./faculty-login.html"><u>Faculty</u></a> &nbsp;&nbsp;&nbsp;&nbsp; . &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="menu" href="./admin-login.html"><u>Admin</u></a>
+                </span>
+            </td>
+        </tr>
+    </TABLE>
+
+    <div class="auth-shell">
+        <div class="auth-panel">
+            <p class="auth-title">Student Log-in</p>
+            <p class="auth-subtitle">After you win one Blackjack round, this page submits your Student ID and password to the live CRS student login page.</p>
+
+            <div class="auth-grid">
+                <div class="auth-card">
+                    <form data-auth-form data-role="student" data-mode="login">
+                        <table class="auth-form-table">
+                            <tr>
+                                <td class="auth-label">Student Number</td>
+                                <td><input class="auth-input" type="text" name="studentId" required></td>
+                            </tr>
+                            <tr>
+                                <td class="auth-label">Password</td>
+                                <td><input class="auth-input" type="password" name="password" required></td>
+                            </tr>
+                        </table>
+
+                        <div class="auth-actions">
+                            <button class="auth-submit" type="submit">Submit and Play Blackjack</button>
+                        </div>
+                        <div class="auth-status" data-auth-status></div>
+                    </form>
+                </div>
+
+                <div class="auth-side-card">
+                    <p class="labelleftgreen9B">Student flow</p>
+                    <ul class="auth-list">
+                        <li>Enter your Student Number and Password.</li>
+                        <li>Win a Blackjack round to unlock the real CRS submission.</li>
+                        <li>The browser then posts your credentials to the live CRS student login endpoint.</li>
+                    </ul>
+                    <p class="auth-helper">This page uses a best-effort static form handoff because the live CRS page does not publish an API contract.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/blackjack.js"></script>
+    <script src="./js/auth.js"></script>
+</BODY>
+</HTML>

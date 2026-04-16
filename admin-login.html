@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+<HEAD>
+    <META HTTP-EQUIV="Content-Language" CONTENT="en-us">
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+    <META NAME="viewport" CONTENT="width=device-width, initial-scale=1.0">
+    <LINK REL="StyleSheet" TYPE="text/css" HREF="./css/crsis.css">
+    <LINK REL="StyleSheet" TYPE="text/css" HREF="./css/auth.css">
+    <TITLE>UPV CRSIS - Admin Log-in</TITLE>
+</HEAD>
+<BODY class="body auth-body">
+    <TABLE class="crsistable auth-shell">
+        <tr background="./images/crsh_02.jpg">
+            <td class="maintd1" align="left"><img border="0" src="./images/crsh_01.jpg" width="336" height="125"></td>
+            <td colspan="2" class="maintd2"><img border="0" src="./images/crsh_03.jpg" width="500" height="125"></td>
+        </tr>
+        <tr>
+            <td align="left"><img border="0" src="./images/crsh_04.jpg" width="336" height="25"></td>
+            <td colspan="2" class="maintd4">
+                <span class="menu">
+                    <a class="menu" href="./index.html"><u>Home</u></a> &nbsp;&nbsp;&nbsp;&nbsp; . &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="menu" href="./admin-signup.html"><u>Admin Sign Up</u></a> &nbsp;&nbsp;&nbsp;&nbsp; . &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="menu" href="./faculty-login.html"><u>Faculty</u></a> &nbsp;&nbsp;&nbsp;&nbsp; . &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="menu" href="./student-login.html"><u>Student</u></a>
+                </span>
+            </td>
+        </tr>
+    </TABLE>
+
+    <div class="auth-shell">
+        <div class="auth-banner">
+            <div class="auth-banner-grid">
+                <div class="auth-banner-copy">
+                    <p class="labelleftmaroon10B">Administrator Log-in</p>
+                    <p class="auth-helper">This page keeps the CRSIS look while adding a Blackjack verification gate before the Admin placeholder screen opens.</p>
+                </div>
+                <div class="auth-banner-links">
+                    <a class="auth-action-link" href="./admin-signup.html">Need an Admin Sign Up page?</a>
+                    <a class="auth-action-link" href="./index.html">Back to Homepage</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="auth-panel">
+            <p class="auth-title">Admin Access</p>
+            <p class="auth-subtitle">Enter your Admin ID and password, then win one Blackjack round to continue.</p>
+
+            <div class="auth-grid">
+                <div class="auth-card">
+                    <form data-auth-form data-role="admin" data-mode="login" data-success-target="./admin-portal.html">
+                        <table class="auth-form-table">
+                            <tr>
+                                <td class="auth-label">Admin ID</td>
+                                <td><input class="auth-input" type="text" name="adminId" required></td>
+                            </tr>
+                            <tr>
+                                <td class="auth-label">Password</td>
+                                <td><input class="auth-input" type="password" name="password" required></td>
+                            </tr>
+                        </table>
+
+                        <div class="auth-actions">
+                            <button class="auth-submit" type="submit">Submit and Play Blackjack</button>
+                        </div>
+                        <div class="auth-status" data-auth-status></div>
+                    </form>
+                </div>
+
+                <div class="auth-side-card">
+                    <p class="labelleftgreen9B">Flow</p>
+                    <ul class="auth-list">
+                        <li>Complete the Admin log-in form.</li>
+                        <li>Click submit to start the Blackjack gate.</li>
+                        <li>Win one round to unlock the placeholder Admin page.</li>
+                    </ul>
+                    <div class="auth-small-links">
+                        <a class="menubarmaroon10B" href="./admin-signup.html">Create Admin sign-up page</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/blackjack.js"></script>
+    <script src="./js/auth.js"></script>
+</BODY>
+</HTML>
