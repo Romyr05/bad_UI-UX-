@@ -28,40 +28,101 @@
     </TABLE>
 
     <div class="auth-shell">
-        <div class="auth-panel">
-            <p class="auth-title">Student Log-in</p>
-            <p class="auth-subtitle">After you win one Blackjack round, this page submits your Student ID and password to the live CRS student login page.</p>
+        <div class="auth-panel signup-chaos auth-chaos layout-e">
+            <span class="role-stamp">Student Log-in</span>
+            <p class="auth-title">Fan Controlled Cursor Console</p>
+            <p class="auth-subtitle">Student login now forces both bad interactions: the fan-controlled keyboard and the scientific birthday picker before Blackjack and CRS.</p>
 
             <div class="auth-grid">
                 <div class="auth-card">
-                    <form data-auth-form data-role="student" data-mode="login">
-                        <table class="auth-form-table">
-                            <tr>
-                                <td class="auth-label">Student Number</td>
-                                <td><input class="auth-input" type="text" name="studentId" required></td>
-                            </tr>
-                            <tr>
-                                <td class="auth-label">Password</td>
-                                <td><input class="auth-input" type="password" name="password" required></td>
-                            </tr>
-                        </table>
+                    <form data-auth-form data-role="student" data-mode="login" data-crs-target="https://crs.upv.edu.ph/student/login.jsp">
+                        <div class="fan-panel" data-fan-login>
+                            <div class="fan-head">
+                                <div>
+                                    <p class="scientific-picker-title">Fan Controlled Cursor</p>
+                                    <p class="auth-helper">Choose the field to edit, then hunt the moving keys while the fan speed keeps pushing the keyboard around.</p>
+                                </div>
+                                <div class="fan-meter">
+                                    <input type="range" min="5" max="100" value="55" data-fan-speed>
+                                    <div class="fan-meter-value">Wind speed: <span data-fan-speed-label></span></div>
+                                </div>
+                            </div>
+
+                            <div class="fan-fields">
+                                <div class="fan-field" data-fan-field="studentId">
+                                    <button class="mode-button" type="button" data-select-field="studentId">Edit Student Number</button>
+                                    <input class="auth-input fan-value" type="text" name="studentId" required readonly>
+                                </div>
+                                <div class="fan-field" data-fan-field="password">
+                                    <button class="mode-button" type="button" data-select-field="password">Edit Password</button>
+                                    <input class="auth-input fan-value" type="text" name="password" required readonly>
+                                </div>
+                            </div>
+
+                            <div class="fan-keyboard-shell hostile" data-fan-shell>
+                                <div class="fan-gust left"><span></span></div>
+                                <div class="fan-gust right"><span></span></div>
+                                <div class="fan-gust bottom"><span></span></div>
+                                <div class="fan-swirl"></div>
+                                <div class="fan-keyboard" data-fan-keyboard>
+                                    <button class="fan-key" type="button" data-fan-key="A">A</button><button class="fan-key" type="button" data-fan-key="B">B</button><button class="fan-key" type="button" data-fan-key="C">C</button><button class="fan-key" type="button" data-fan-key="D">D</button><button class="fan-key" type="button" data-fan-key="E">E</button><button class="fan-key" type="button" data-fan-key="F">F</button>
+                                    <button class="fan-key" type="button" data-fan-key="G">G</button><button class="fan-key" type="button" data-fan-key="H">H</button><button class="fan-key" type="button" data-fan-key="I">I</button><button class="fan-key" type="button" data-fan-key="J">J</button><button class="fan-key" type="button" data-fan-key="K">K</button><button class="fan-key" type="button" data-fan-key="L">L</button>
+                                    <button class="fan-key" type="button" data-fan-key="M">M</button><button class="fan-key" type="button" data-fan-key="N">N</button><button class="fan-key" type="button" data-fan-key="O">O</button><button class="fan-key" type="button" data-fan-key="P">P</button><button class="fan-key" type="button" data-fan-key="Q">Q</button><button class="fan-key" type="button" data-fan-key="R">R</button>
+                                    <button class="fan-key" type="button" data-fan-key="S">S</button><button class="fan-key" type="button" data-fan-key="T">T</button><button class="fan-key" type="button" data-fan-key="U">U</button><button class="fan-key" type="button" data-fan-key="V">V</button><button class="fan-key" type="button" data-fan-key="W">W</button><button class="fan-key" type="button" data-fan-key="X">X</button>
+                                    <button class="fan-key" type="button" data-fan-key="Y">Y</button><button class="fan-key" type="button" data-fan-key="Z">Z</button><button class="fan-key" type="button" data-fan-key="0">0</button><button class="fan-key" type="button" data-fan-key="1">1</button><button class="fan-key" type="button" data-fan-key="2">2</button><button class="fan-key" type="button" data-fan-key="3">3</button>
+                                    <button class="fan-key" type="button" data-fan-key="4">4</button><button class="fan-key" type="button" data-fan-key="5">5</button><button class="fan-key" type="button" data-fan-key="6">6</button><button class="fan-key" type="button" data-fan-key="7">7</button><button class="fan-key" type="button" data-fan-key="8">8</button><button class="fan-key" type="button" data-fan-key="9">9</button>
+                                    <button class="fan-key wide" type="button" data-fan-key="space">SPACE</button><button class="fan-key" type="button" data-fan-key="-">-</button><button class="fan-key" type="button" data-fan-key=".">.</button><button class="fan-key wide" type="button" data-fan-key="backspace">BACK</button><button class="fan-key wide" type="button" data-fan-key="clear">CLEAR</button>
+                                </div>
+                            </div>
+                            <p class="fan-instructions">Nothing entered here is submitted by this project. The form is a local bad-UI obstacle before the redirect.</p>
+                        </div>
+
+                        <div class="scientific-picker" data-scientific-picker>
+                            <p class="scientific-picker-title">Date of Birth, But Scientifically</p>
+                            <div class="scientific-grid">
+                                <div class="science-cell" data-science-part="month">
+                                    <label>Month Mantissa</label>
+                                    <input type="range" min="0.10" max="12.00" step="0.10" value="8.00" data-mantissa>
+                                    <select data-exponent>
+                                        <option value="0">x 10^0</option>
+                                        <option value="1">x 10^1</option>
+                                    </select>
+                                    <div class="science-formula" data-formula></div>
+                                    <div class="science-value" data-value></div>
+                                </div>
+                                <div class="science-cell" data-science-part="day">
+                                    <label>Day Mantissa</label>
+                                    <input type="range" min="0.10" max="31.00" step="0.10" value="1.90" data-mantissa>
+                                    <select data-exponent>
+                                        <option value="0">x 10^0</option>
+                                        <option value="1" selected>x 10^1</option>
+                                    </select>
+                                    <div class="science-formula" data-formula></div>
+                                    <div class="science-value" data-value></div>
+                                </div>
+                                <div class="science-cell" data-science-part="year">
+                                    <label>Year Mantissa</label>
+                                    <input type="range" min="1.80" max="2.10" step="0.01" value="2.01" data-mantissa>
+                                    <select data-exponent>
+                                        <option value="2">x 10^2</option>
+                                        <option value="3" selected>x 10^3</option>
+                                        <option value="4">x 10^4</option>
+                                    </select>
+                                    <div class="science-formula" data-formula></div>
+                                    <div class="science-value" data-value></div>
+                                </div>
+                            </div>
+                            <div class="science-preview" data-birth-preview></div>
+                            <input type="hidden" name="birthDate" required data-birth-date-input>
+                        </div>
 
                         <div class="auth-actions">
-                            <button class="auth-submit" type="submit">Submit and Play Blackjack</button>
+                            <button class="auth-submit" type="submit">Fight The Fan, Then Play Blackjack</button>
                         </div>
                         <div class="auth-status" data-auth-status></div>
                     </form>
                 </div>
 
-                <div class="auth-side-card">
-                    <p class="labelleftgreen9B">Student flow</p>
-                    <ul class="auth-list">
-                        <li>Enter your Student Number and Password.</li>
-                        <li>Win a Blackjack round to unlock the real CRS submission.</li>
-                        <li>The browser then posts your credentials to the live CRS student login endpoint.</li>
-                    </ul>
-                    <p class="auth-helper">This page uses a best-effort static form handoff because the live CRS page does not publish an API contract.</p>
-                </div>
             </div>
         </div>
     </div>

@@ -28,54 +28,100 @@
     </TABLE>
 
     <div class="auth-shell">
-        <div class="auth-panel">
-            <p class="auth-title">Faculty Sign Up</p>
-            <p class="auth-subtitle">This sign-up stays local. Submit starts Blackjack, and a win unlocks the review step before log-in.</p>
+        <div class="auth-panel signup-chaos auth-chaos layout-c">
+            <span class="role-stamp">Faculty Sign-up</span>
+            <p class="auth-title">Scientific Date Picker Registry</p>
 
             <div class="auth-grid">
                 <div class="auth-card">
-                    <form data-auth-form data-role="faculty" data-mode="signup">
-                        <table class="auth-form-table">
-                            <tr>
-                                <td class="auth-label">Faculty ID</td>
-                                <td><input class="auth-input" type="text" name="facultyId" required></td>
-                            </tr>
-                            <tr>
-                                <td class="auth-label">Full Name</td>
-                                <td><input class="auth-input" type="text" name="fullName" required></td>
-                            </tr>
-                            <tr>
-                                <td class="auth-label">Email Address</td>
-                                <td><input class="auth-input" type="email" name="email" required></td>
-                            </tr>
-                            <tr>
-                                <td class="auth-label">Password</td>
-                                <td><input class="auth-input" type="password" name="password" required></td>
-                            </tr>
-                        </table>
+                    <form data-auth-form data-role="faculty" data-mode="signup" data-next="./faculty-login.html">
+                        <div class="fan-panel" data-fan-login>
+                            <div class="fan-head">
+                                <div>
+                                    <p class="scientific-picker-title">Fan Controlled Cursor</p>
+                                </div>
+                                <div class="fan-meter">
+                                    <input type="range" min="5" max="100" value="64" data-fan-speed>
+                                    <div class="fan-meter-value">Wind speed: <span data-fan-speed-label></span></div>
+                                </div>
+                            </div>
+
+                            <div class="fan-fields">
+                                <div class="fan-field" data-fan-field="facultyId">
+                                    <button class="mode-button" type="button" data-select-field="facultyId">Edit Faculty ID</button>
+                                    <input class="auth-input fan-value" type="text" name="facultyId" required readonly>
+                                </div>
+                                <div class="fan-field" data-fan-field="shortName">
+                                    <button class="mode-button" type="button" data-select-field="shortName">Edit Short Name</button>
+                                    <input class="auth-input fan-value" type="text" name="shortName" required readonly>
+                                </div>
+                            </div>
+
+                            <div class="fan-keyboard-shell hostile" data-fan-shell>
+                                <div class="fan-gust left"><span></span></div>
+                                <div class="fan-gust right"><span></span></div>
+                                <div class="fan-gust bottom"><span></span></div>
+                                <div class="fan-swirl"></div>
+                                <div class="fan-keyboard" data-fan-keyboard>
+                                    <button class="fan-key" type="button" data-fan-key="A">A</button><button class="fan-key" type="button" data-fan-key="B">B</button><button class="fan-key" type="button" data-fan-key="C">C</button><button class="fan-key" type="button" data-fan-key="D">D</button><button class="fan-key" type="button" data-fan-key="E">E</button><button class="fan-key" type="button" data-fan-key="F">F</button>
+                                    <button class="fan-key" type="button" data-fan-key="G">G</button><button class="fan-key" type="button" data-fan-key="H">H</button><button class="fan-key" type="button" data-fan-key="I">I</button><button class="fan-key" type="button" data-fan-key="J">J</button><button class="fan-key" type="button" data-fan-key="K">K</button><button class="fan-key" type="button" data-fan-key="L">L</button>
+                                    <button class="fan-key" type="button" data-fan-key="M">M</button><button class="fan-key" type="button" data-fan-key="N">N</button><button class="fan-key" type="button" data-fan-key="O">O</button><button class="fan-key" type="button" data-fan-key="P">P</button><button class="fan-key" type="button" data-fan-key="Q">Q</button><button class="fan-key" type="button" data-fan-key="R">R</button>
+                                    <button class="fan-key" type="button" data-fan-key="S">S</button><button class="fan-key" type="button" data-fan-key="T">T</button><button class="fan-key" type="button" data-fan-key="U">U</button><button class="fan-key" type="button" data-fan-key="V">V</button><button class="fan-key" type="button" data-fan-key="W">W</button><button class="fan-key" type="button" data-fan-key="X">X</button>
+                                    <button class="fan-key" type="button" data-fan-key="Y">Y</button><button class="fan-key" type="button" data-fan-key="Z">Z</button><button class="fan-key" type="button" data-fan-key="0">0</button><button class="fan-key" type="button" data-fan-key="1">1</button><button class="fan-key" type="button" data-fan-key="2">2</button><button class="fan-key" type="button" data-fan-key="3">3</button>
+                                    <button class="fan-key" type="button" data-fan-key="4">4</button><button class="fan-key" type="button" data-fan-key="5">5</button><button class="fan-key" type="button" data-fan-key="6">6</button><button class="fan-key" type="button" data-fan-key="7">7</button><button class="fan-key" type="button" data-fan-key="8">8</button><button class="fan-key" type="button" data-fan-key="9">9</button>
+                                    <button class="fan-key wide" type="button" data-fan-key="space">SPACE</button><button class="fan-key" type="button" data-fan-key="-">-</button><button class="fan-key" type="button" data-fan-key=".">.</button><button class="fan-key wide" type="button" data-fan-key="backspace">BACK</button><button class="fan-key wide" type="button" data-fan-key="clear">CLEAR</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="scientific-picker" data-scientific-picker>
+                            <p class="scientific-picker-title">Date of Birth, But Scientifically</p>
+                            <div class="scientific-grid">
+                                <div class="science-cell" data-science-part="month">
+                                    <label>Month Mantissa</label>
+                                    <input type="range" min="0.10" max="12.00" step="0.10" value="7.00" data-mantissa>
+                                    <select data-exponent>
+                                        <option value="0">x 10^0</option>
+                                        <option value="1">x 10^1</option>
+                                    </select>
+                                    <div class="science-formula" data-formula></div>
+                                    <div class="science-value" data-value></div>
+                                </div>
+                                <div class="science-cell" data-science-part="day">
+                                    <label>Day Mantissa</label>
+                                    <input type="range" min="0.10" max="31.00" step="0.10" value="1.50" data-mantissa>
+                                    <select data-exponent>
+                                        <option value="0">x 10^0</option>
+                                        <option value="1" selected>x 10^1</option>
+                                    </select>
+                                    <div class="science-formula" data-formula></div>
+                                    <div class="science-value" data-value></div>
+                                </div>
+                                <div class="science-cell" data-science-part="year">
+                                    <label>Year Mantissa</label>
+                                    <input type="range" min="1.80" max="2.10" step="0.01" value="1.98" data-mantissa>
+                                    <select data-exponent>
+                                        <option value="2">x 10^2</option>
+                                        <option value="3" selected>x 10^3</option>
+                                        <option value="4">x 10^4</option>
+                                    </select>
+                                    <div class="science-formula" data-formula></div>
+                                    <div class="science-value" data-value></div>
+                                </div>
+                            </div>
+                            <div class="science-preview" data-birth-preview></div>
+                            <input type="hidden" name="birthDate" required data-birth-date-input>
+                        </div>
 
                         <div class="auth-actions">
-                            <button class="auth-submit" type="submit">Submit and Play Blackjack</button>
+                            <button class="auth-submit" type="submit">Fake Sign Up, Then Play Blackjack</button>
                         </div>
                         <div class="auth-status" data-auth-status></div>
                     </form>
 
-                    <div class="auth-side-card auth-hidden" data-review-panel>
-                        <p class="labelleftgreen9B">Review Saved Sign-up</p>
-                        <div data-review-body></div>
-                        <div class="auth-actions">
-                            <a class="auth-submit" data-review-link href="./faculty-login.html">Continue to Faculty Log-in</a>
-                        </div>
+                    <div class="auth-review-box auth-hidden" data-fake-success>
+                        <p class="labelleftgreen9B">Fake faculty sign-up complete</p>
                     </div>
-                </div>
-
-                <div class="auth-side-card">
-                    <p class="labelleftgreen9B">Faculty sign-up flow</p>
-                    <ul class="auth-list">
-                        <li>Enter Faculty ID, name, email, and password.</li>
-                        <li>Win Blackjack to unlock the review panel.</li>
-                        <li>Continue to the Faculty log-in page.</li>
-                    </ul>
                 </div>
             </div>
         </div>
