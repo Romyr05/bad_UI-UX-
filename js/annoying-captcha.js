@@ -1,15 +1,5 @@
 (function () {
     var CAPTCHA_PAGE = "./captcha.html";
-    var EXEMPT_PATHS = {
-        "./admin-signup.html": true,
-        "./student-signup.html": true,
-        "./faculty-signup.html": true
-    };
-    var EXEMPT_LABELS = {
-        "admin": true,
-        "student": true,
-        "faculty": true
-    };
 
     function normalizeHref(href) {
         if (!href) {
@@ -17,13 +7,6 @@
         }
 
         return href.trim().replace(/\\/g, "/");
-    }
-
-    function isExemptLink(anchor) {
-        var href = normalizeHref(anchor.getAttribute("href"));
-        var label = (anchor.textContent || "").trim().toLowerCase();
-
-        return EXEMPT_PATHS[href] || EXEMPT_LABELS[label];
     }
 
     function shouldIntercept(anchor) {
@@ -38,10 +21,6 @@
         }
 
         if (anchor.hasAttribute("data-captcha-wrapped")) {
-            return false;
-        }
-
-        if (isExemptLink(anchor)) {
             return false;
         }
 

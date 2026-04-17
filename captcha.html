@@ -109,6 +109,8 @@
         var stageIndex = 0;
         var activeCleanup = null;
         var steps = [];
+        var cheatBuffer = "";
+        var skipUnlocked = false;
 
         function randomInt(min, max) {
             return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -137,12 +139,43 @@
             statusEl.textContent = text;
         }
 
+        function revealSkipButton() {
+            var actionsEl;
+            var skipButton;
+
+            if (skipUnlocked) {
+                return;
+            }
+
+            actionsEl = stageEl.querySelector(".captcha-actions");
+            if (!actionsEl) {
+                return;
+            }
+
+            skipUnlocked = true;
+            skipButton = document.createElement("button");
+            skipButton.type = "button";
+            skipButton.className = "captcha-button captcha-button-secondary";
+            skipButton.textContent = "Emergency Skip";
+            skipButton.addEventListener("click", function () {
+                finishCaptcha();
+            });
+
+            actionsEl.appendChild(skipButton);
+            setStatus("A secret bypass has appeared for this captcha only.");
+        }
+
         function updateProgress() {
             var percent = steps.length ? (completed / steps.length) * 100 : 0;
             progressEl.style.width = percent + "%";
         }
 
         function finishCaptcha() {
+            if (activeCleanup) {
+                activeCleanup();
+                activeCleanup = null;
+            }
+
             updateProgress();
             stageEl.innerHTML =
                 '<h2>Verification Complete</h2>' +
@@ -183,6 +216,21 @@
                 stageEl.className = "captcha-card";
             }, 500);
         }
+
+        document.addEventListener("keydown", function (event) {
+            var key = event.key;
+
+            if (!key || key.length !== 1) {
+                return;
+            }
+
+            cheatBuffer = (cheatBuffer + key.toLowerCase()).slice(-8);
+
+            if (cheatBuffer === "skipthis") {
+                revealSkipButton();
+                cheatBuffer = "";
+            }
+        });
 
         function buildTermsParagraphs() {
             var fragments = [
