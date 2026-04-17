@@ -1,0 +1,604 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta http-equiv="Content-Language" content="en-us">
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="RJCA and deeply questionable captcha policy">
+    <link rel="icon" href="./images/crslogo.jpg" type="image/jpg">
+    <link rel="stylesheet" type="text/css" href="./css/crsis.css">
+    <link rel="stylesheet" type="text/css" href="./css/auth.css">
+    <link rel="stylesheet" type="text/css" href="./css/captcha.css">
+    <title>UPV CRSIS Security Verification</title>
+</head>
+<body class="captcha-body">
+    <table class="crsistable captcha-shell">
+        <tr background="./images/crsh_02.jpg" border="0">
+            <td class="maintd1" background="./images/crsh_02.jpg" border="0" align="left">
+                <img border="0" src="./images/crsh_01.jpg" width="336" height="125" alt="UPV CRSIS left banner">
+            </td>
+            <td colspan="2" class="maintd2" background="./images/crsh_02.jpg" border="0">
+                <img border="0" src="./images/crsh_03.jpg" width="500" height="125" alt="UPV CRSIS top banner">
+            </td>
+        </tr>
+        <tr>
+            <td align="left">
+                <img border="0" src="./images/crsh_04.jpg" width="336" height="25" alt="">
+            </td>
+            <td colspan="2" class="maintd4">
+                <span class="menu">
+                    <a class="menu" href="./admin-signup.html"><u>Admin</u></a>
+                    &nbsp;&nbsp;&nbsp;&nbsp; . &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="menu" href="./student-signup.html"><u>Student</u></a>
+                    &nbsp;&nbsp;&nbsp;&nbsp; . &nbsp;&nbsp;&nbsp;&nbsp;
+                    <a class="menu" href="./faculty-signup.html"><u>Faculty</u></a>
+                </span>
+            </td>
+        </tr>
+    </table>
+
+    <div class="captcha-main">
+        <div class="captcha-panel">
+            <h1 class="captcha-title">Mandatory Verification Corridor</h1>
+            <p class="captcha-subtitle">
+                The page you requested has been temporarily protected by our Randomized User Frustration Protocol.
+            </p>
+            <p class="captcha-warning" id="captcha-target-label">
+                Preparing a completely unreasonable checkpoint for your selected link.
+            </p>
+            <div class="captcha-progressbar">
+                <div class="captcha-progressbar-fill" id="captcha-progress"></div>
+            </div>
+            <p class="captcha-status" id="captcha-status">
+                Initializing inconvenience...
+            </p>
+            <div class="captcha-card" id="captcha-stage"></div>
+        </div>
+    </div>
+
+    <table width="100%" align="center" id="footer_shadow" background="./images/crsf_03.jpg">
+        <tr>
+            <td>
+                <div align="center">
+                    <font class="labelleftblack2B"><br><br><br></font>
+                    <span class="footercopyright">
+                        <a class="menubargreen" href="http://www.up.edu.ph/"><u>UP System</u></a> &nbsp; | &nbsp;
+                        <a class="menubargreen" href="http://www.upd.edu.ph/"><u>Diliman</u></a> &nbsp; | &nbsp;
+                        <a class="menubargreen" href="http://www.upm.edu.ph/"><u>Manila</u></a> &nbsp; | &nbsp;
+                        <a class="menubargreen" href="http://www.uplb.edu.ph/"><u>Los Ba&ntilde;os</u></a> &nbsp; | &nbsp;
+                        <a class="menubargreen" href="http://www.upv.edu.ph/"><u>Visayas</u></a> &nbsp; | &nbsp;
+                        <a class="menubargreen" href="http://www.upmin.edu.ph/"><u>Mindanao</u></a> &nbsp; | &nbsp;
+                        <a class="menubargreen" href="http://www.upb.edu.ph/"><u>Baguio</u></a> &nbsp; | &nbsp;
+                        <a class="menubargreen" href="http://www.upou.edu.ph/"><u>Open University</u></a>
+                    </span>
+                    <br>
+                    <span class="footercopyright">
+                        Copyright &copy; 2026. All Rights Reserved.
+                    </span>
+                    <br>
+                    <span class="labelleftmaroon7B">
+                        CRSIS-Office of the University Registrar, University of the Philippines Visayas, Miagao, Iloilo, Philippines, 5023
+                    </span>
+                    <br>
+                    <span class="labelleftmaroon7B">
+                        Phone: trunkline (033) 315-9631 / 315-9632 and local numbers 191-192
+                        &nbsp;|&nbsp;
+                        Mobile No. (Calls Only): Smart/TNT-09854345235; Globe-09453446794
+                        &nbsp;|&nbsp;
+                        E-mail: crs.upvisayas@up.edu.ph
+                    </span>
+                    <br>
+                    <span class="footercopyright">
+                        <a class="menubarseagreen" href="./index.html">Return Home</a>
+                    </span>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+    (function () {
+        var params = new URLSearchParams(window.location.search);
+        var target = params.get("target");
+        var targetLabel = params.get("label") || "Unknown destination";
+        var stageEl = document.getElementById("captcha-stage");
+        var statusEl = document.getElementById("captcha-status");
+        var progressEl = document.getElementById("captcha-progress");
+        var targetLabelEl = document.getElementById("captcha-target-label");
+        var completed = 0;
+        var stageIndex = 0;
+        var activeCleanup = null;
+        var steps = [];
+
+        function randomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        function shuffle(list) {
+            for (var i = list.length - 1; i > 0; i--) {
+                var j = Math.floor(Math.random() * (i + 1));
+                var tmp = list[i];
+                list[i] = list[j];
+                list[j] = tmp;
+            }
+            return list;
+        }
+
+        function escapeHtml(value) {
+            return String(value)
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;")
+                .replace(/"/g, "&quot;")
+                .replace(/'/g, "&#39;");
+        }
+
+        function setStatus(text) {
+            statusEl.textContent = text;
+        }
+
+        function updateProgress() {
+            var percent = steps.length ? (completed / steps.length) * 100 : 0;
+            progressEl.style.width = percent + "%";
+        }
+
+        function finishCaptcha() {
+            updateProgress();
+            stageEl.innerHTML =
+                '<h2>Verification Complete</h2>' +
+                '<p class="captcha-final-note">The system has decided you are probably still human. Redirecting now...</p>' +
+                '<p class="captcha-meta">Destination: ' + escapeHtml(target || "unknown") + '</p>';
+            setStatus("Finalizing link access. Please wait while your patience fully expires.");
+            setTimeout(function () {
+                if (target) {
+                    window.location.href = target;
+                } else {
+                    window.location.href = "./index.html";
+                }
+            }, 1400);
+        }
+
+        function goNextStep() {
+            completed += 1;
+            updateProgress();
+
+            if (activeCleanup) {
+                activeCleanup();
+                activeCleanup = null;
+            }
+
+            if (stageIndex >= steps.length - 1) {
+                finishCaptcha();
+                return;
+            }
+
+            stageIndex += 1;
+            steps[stageIndex]();
+        }
+
+        function flashFailure(message) {
+            setStatus(message);
+            stageEl.className = "captcha-card shaky";
+            setTimeout(function () {
+                stageEl.className = "captcha-card";
+            }, 500);
+        }
+
+        function buildTermsParagraphs() {
+            var fragments = [
+                "By continuing, you acknowledge that all waiting periods are educational and spiritually enriching.",
+                "You agree that rapid scrolling demonstrates suspicious confidence and therefore cannot be allowed.",
+                "You also confirm that any inconvenience caused by this verification ritual is part of the user journey.",
+                "If the requested page is a PDF, you accept that the PDF may or may not exist, yet the bureaucracy definitely does.",
+                "Should you attempt to skip ahead, the system reserves the right to disapprove silently.",
+                "All frustrations, delays, and arithmetic events are considered binding under the Department of Needless Friction.",
+                "Repeated sighing does not constitute successful completion of this checkpoint.",
+                "This agreement remains effective even if you did not want to read any of it in the first place."
+            ];
+            var paragraphs = [];
+
+            for (var i = 0; i < 90; i++) {
+                paragraphs.push(
+                    "<p><strong>Section " + (i + 1) + ".</strong> " +
+                    fragments[i % fragments.length] +
+                    " Auxiliary clause " + randomInt(100, 999) +
+                    " prohibits any sense of momentum.</p>"
+                );
+            }
+
+            return paragraphs.join("");
+        }
+
+        function renderTermsStep() {
+            var minimumWait = randomInt(10, 16);
+            var desiredScroll = 0;
+            var ticking = null;
+            var reachedBottomAt = null;
+            var lastNudgeAt = 0;
+
+            stageEl.innerHTML =
+                "<h2>Step 1: Scroll Through The Terms</h2>" +
+                "<p class='captcha-warning'>Read everything carefully. The scroll speed has been reduced for your safety.</p>" +
+                "<div class='slow-terms-box' id='terms-box'>" +
+                buildTermsParagraphs() +
+                "</div>" +
+                "<p class='captcha-meta' id='terms-meta'>Reach the bottom first. Your mandatory waiting period will only begin after that.</p>" +
+                "<div class='captcha-actions'>" +
+                "<button class='captcha-button' id='terms-continue' disabled>I Have Suffered Enough</button>" +
+                "</div>";
+
+            setStatus("Human verification step 1 of " + steps.length + ": legally unnecessary reading.");
+
+            var termsBox = document.getElementById("terms-box");
+            var meta = document.getElementById("terms-meta");
+            var button = document.getElementById("terms-continue");
+
+            function evaluate() {
+                var atBottom = termsBox.scrollTop + termsBox.clientHeight >= termsBox.scrollHeight - 2;
+                var remaining;
+
+                if (atBottom && reachedBottomAt === null) {
+                    reachedBottomAt = Date.now();
+                }
+
+                if (!atBottom) {
+                    reachedBottomAt = null;
+                    meta.textContent = "Reach the bottom first. The waiting period begins only when you are actually there.";
+                    button.disabled = true;
+                    return;
+                }
+
+                remaining = Math.max(0, minimumWait - Math.floor((Date.now() - reachedBottomAt) / 1000));
+
+                meta.textContent = remaining === 0
+                    ? "Approved. You stayed at the bottom long enough."
+                    : "Bottom reached. Remain here for " + remaining + " more second" + (remaining === 1 ? "" : "s") + ".";
+
+                button.disabled = remaining !== 0;
+            }
+
+            function startTicker() {
+                if (ticking) {
+                    return;
+                }
+
+                ticking = setInterval(function () {
+                    if (Math.abs(termsBox.scrollTop - desiredScroll) < 2) {
+                        termsBox.scrollTop = desiredScroll;
+                        clearInterval(ticking);
+                        ticking = null;
+                        evaluate();
+                        return;
+                    }
+
+                    if (termsBox.scrollTop < desiredScroll) {
+                        termsBox.scrollTop += 4;
+                    } else {
+                        termsBox.scrollTop -= 4;
+                    }
+                    evaluate();
+                }, 16);
+            }
+
+            function steerTo(next) {
+                var maxStep = 24;
+                if (next > desiredScroll + maxStep) {
+                    desiredScroll += maxStep;
+                } else if (next < desiredScroll - maxStep) {
+                    desiredScroll -= maxStep;
+                } else {
+                    desiredScroll = next;
+                }
+
+                desiredScroll = Math.max(0, Math.min(desiredScroll, termsBox.scrollHeight - termsBox.clientHeight));
+                startTicker();
+            }
+
+            function nudge(direction) {
+                var now = Date.now();
+                var approvedStep = 10;
+
+                if (now - lastNudgeAt < 55) {
+                    return;
+                }
+
+                lastNudgeAt = now;
+                steerTo(termsBox.scrollTop + (direction > 0 ? approvedStep : -approvedStep));
+            }
+
+            termsBox.addEventListener("wheel", function (event) {
+                event.preventDefault();
+                nudge(event.deltaY > 0 ? 1 : -1);
+            }, { passive: false });
+
+            termsBox.addEventListener("touchmove", function (event) {
+                event.preventDefault();
+                if (event.touches && event.touches.length > 0) {
+                    nudge(1);
+                }
+            }, { passive: false });
+
+            termsBox.addEventListener("scroll", function () {
+                if (Math.abs(termsBox.scrollTop - desiredScroll) > 30) {
+                    termsBox.scrollTop = desiredScroll;
+                }
+                evaluate();
+            });
+
+            termsBox.addEventListener("keydown", function (event) {
+                event.preventDefault();
+            });
+
+            button.addEventListener("click", goNextStep);
+
+            var timer = setInterval(evaluate, 250);
+            evaluate();
+
+            activeCleanup = function () {
+                clearInterval(timer);
+                if (ticking) {
+                    clearInterval(ticking);
+                }
+            };
+        }
+
+        function renderStepperStep() {
+            var left = randomInt(24, 89);
+            var right = randomInt(11, 47);
+            var operator = Math.random() > 0.45 ? "+" : "-";
+            var answer = operator === "+" ? left + right : left - right;
+            var startValue = answer + randomInt(-18, 18);
+
+            stageEl.innerHTML =
+                "<h2>Step " + (stageIndex + 1) + ": Manual Arithmetic Alignment</h2>" +
+                "<p class='captcha-warning'>Solve the problem, then click the tiny bureaucratic controls until the number matches exactly.</p>" +
+                "<div class='math-display'>" + left + " " + operator + " " + right + " = ?</div>" +
+                "<div class='stepper-wrap'>" +
+                "<button class='stepper-button' id='stepper-minus' aria-label='minus'>-</button>" +
+                "<div class='stepper-value' id='stepper-value'>" + startValue + "</div>" +
+                "<button class='stepper-button' id='stepper-plus' aria-label='plus'>+</button>" +
+                "</div>" +
+                "<p class='captcha-meta' id='stepper-meta'>Current value must become " + answer + ".</p>" +
+                "<div class='captcha-actions'>" +
+                "<button class='captcha-button' id='stepper-submit'>Submit Number</button>" +
+                "</div>";
+
+            setStatus("Human verification step " + (stageIndex + 1) + " of " + steps.length + ": solving arithmetic the slow way.");
+
+            var valueEl = document.getElementById("stepper-value");
+            var current = startValue;
+
+            function renderValue() {
+                valueEl.textContent = current;
+            }
+
+            document.getElementById("stepper-minus").addEventListener("click", function () {
+                current -= 1;
+                renderValue();
+            });
+
+            document.getElementById("stepper-plus").addEventListener("click", function () {
+                current += 1;
+                renderValue();
+            });
+
+            document.getElementById("stepper-submit").addEventListener("click", function () {
+                if (current === answer) {
+                    goNextStep();
+                    return;
+                }
+
+                flashFailure("Incorrect. The adjustment committee requests more clicking.");
+            });
+        }
+
+        function renderFlyingDigitsStep() {
+            var left = randomInt(12, 54);
+            var right = randomInt(12, 54);
+            var answer = String(left + right);
+            var progress = "";
+            var buttons = [];
+            var intervalId = null;
+
+            stageEl.innerHTML =
+                "<h2>Step " + (stageIndex + 1) + ": Chase The Correct Digits</h2>" +
+                "<p class='captcha-warning'>Solve the math problem and click the answer digits in the correct order before they drift away.</p>" +
+                "<div class='math-display'>" + left + " + " + right + " = ?</div>" +
+                "<div class='flying-stage' id='flying-stage'></div>" +
+                "<div class='flying-progress' id='flying-progress'>Selected digits: none</div>";
+
+            setStatus("Human verification step " + (stageIndex + 1) + " of " + steps.length + ": pursuing aggressively mobile numbers.");
+
+            var stage = document.getElementById("flying-stage");
+            var progressElLocal = document.getElementById("flying-progress");
+            var pool = shuffle(answer.split("").concat(String(randomInt(0, 9)), String(randomInt(0, 9)), String(randomInt(0, 9)), String(randomInt(0, 9))));
+
+            pool.forEach(function (digit, index) {
+                var button = document.createElement("button");
+                button.type = "button";
+                button.className = "flying-digit";
+                button.textContent = digit;
+                button.style.left = randomInt(0, Math.max(0, stage.clientWidth - 60)) + "px";
+                button.style.top = randomInt(0, Math.max(0, stage.clientHeight - 60)) + "px";
+                button.dataset.vx = (Math.random() > 0.5 ? 1 : -1) * randomInt(1, 3);
+                button.dataset.vy = (Math.random() > 0.5 ? 1 : -1) * randomInt(1, 3);
+                button.dataset.index = index;
+
+                button.addEventListener("click", function () {
+                    var expected = answer.charAt(progress.length);
+
+                    if (digit === expected) {
+                        progress += digit;
+                        progressElLocal.textContent = "Selected digits: " + progress;
+                        button.disabled = true;
+                        button.style.visibility = "hidden";
+
+                        if (progress === answer) {
+                            goNextStep();
+                        }
+                    } else {
+                        progress = "";
+                        progressElLocal.textContent = "Selected digits: none";
+                        flashFailure("Wrong digit. Sequence reset for quality assurance.");
+                    }
+                });
+
+                buttons.push(button);
+                stage.appendChild(button);
+            });
+
+            intervalId = setInterval(function () {
+                buttons.forEach(function (button) {
+                    if (button.disabled) {
+                        return;
+                    }
+
+                    var leftPos = button.offsetLeft + Number(button.dataset.vx);
+                    var topPos = button.offsetTop + Number(button.dataset.vy);
+
+                    if (leftPos <= 0 || leftPos >= stage.clientWidth - button.offsetWidth) {
+                        button.dataset.vx = String(-Number(button.dataset.vx));
+                        leftPos = Math.max(0, Math.min(stage.clientWidth - button.offsetWidth, leftPos));
+                    }
+
+                    if (topPos <= 0 || topPos >= stage.clientHeight - button.offsetHeight) {
+                        button.dataset.vy = String(-Number(button.dataset.vy));
+                        topPos = Math.max(0, Math.min(stage.clientHeight - button.offsetHeight, topPos));
+                    }
+
+                    button.style.left = leftPos + "px";
+                    button.style.top = topPos + "px";
+                });
+            }, 20);
+
+            activeCleanup = function () {
+                clearInterval(intervalId);
+            };
+        }
+
+        function shiftChar(character, shift) {
+            var code = character.charCodeAt(0);
+
+            if (code >= 65 && code <= 90) {
+                return String.fromCharCode(((code - 65 + shift + 26) % 26) + 65);
+            }
+
+            if (code >= 48 && code <= 57) {
+                return String.fromCharCode(((code - 48 + shift + 10) % 10) + 48);
+            }
+
+            return character;
+        }
+
+        function renderMemoryStep() {
+            var alphabet = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+            var secret = "";
+            var shift = randomInt(1, 5);
+            var revealSeconds = randomInt(3, 5);
+            var hidden = false;
+
+            for (var i = 0; i < 7; i++) {
+                secret += alphabet.charAt(randomInt(0, alphabet.length - 1));
+            }
+
+            stageEl.innerHTML =
+                "<h2>Step " + (stageIndex + 1) + ": Memorize And Compensate</h2>" +
+                "<p class='captcha-warning'>Memorize the access code quickly. When typing, every letter and number is shifted forward by " + shift + ".</p>" +
+                "<div class='memory-code' id='memory-code'>" + secret + "</div>" +
+                "<div class='memory-countdown' id='memory-countdown'>Code disappears in " + revealSeconds + " second(s).</div>" +
+                "<p class='captcha-meta'>To succeed, type characters that result in the original code after the forced shift.</p>" +
+                "<input class='memory-input' id='memory-input' type='text' maxlength='" + secret.length + "' autocomplete='off' spellcheck='false' disabled>" +
+                "<div class='captcha-actions'>" +
+                "<button class='captcha-button' id='memory-submit' disabled>Submit Distorted Input</button>" +
+                "</div>";
+
+            setStatus("Human verification step " + (stageIndex + 1) + " of " + steps.length + ": memory plus involuntary encryption.");
+
+            var codeEl = document.getElementById("memory-code");
+            var countdownEl = document.getElementById("memory-countdown");
+            var inputEl = document.getElementById("memory-input");
+            var submitEl = document.getElementById("memory-submit");
+            var renderedValue = "";
+
+            var countdownTimer = setInterval(function () {
+                revealSeconds -= 1;
+
+                if (revealSeconds <= 0) {
+                    clearInterval(countdownTimer);
+                    hidden = true;
+                    codeEl.textContent = "CODE REDACTED";
+                    countdownEl.textContent = "Type the original code while compensating for the shift.";
+                    inputEl.disabled = false;
+                    submitEl.disabled = false;
+                    inputEl.focus();
+                    return;
+                }
+
+                countdownEl.textContent = "Code disappears in " + revealSeconds + " second(s).";
+            }, 1000);
+
+            inputEl.addEventListener("keydown", function (event) {
+                if (!hidden) {
+                    event.preventDefault();
+                    return;
+                }
+
+                if (event.key === "Backspace") {
+                    event.preventDefault();
+                    renderedValue = renderedValue.slice(0, -1);
+                    inputEl.value = renderedValue;
+                    return;
+                }
+
+                if (!/^[a-z0-9]$/i.test(event.key) || renderedValue.length >= secret.length) {
+                    event.preventDefault();
+                    return;
+                }
+
+                event.preventDefault();
+                renderedValue += shiftChar(event.key.toUpperCase(), shift);
+                inputEl.value = renderedValue;
+            });
+
+            submitEl.addEventListener("click", function () {
+                if (inputEl.value.toUpperCase() === secret) {
+                    goNextStep();
+                    return;
+                }
+
+                flashFailure("Incorrect. The keyboard shift remains mandatory.");
+                renderedValue = "";
+                inputEl.value = "";
+                inputEl.focus();
+            });
+
+            activeCleanup = function () {
+                clearInterval(countdownTimer);
+            };
+        }
+
+        if (targetLabelEl) {
+            targetLabelEl.innerHTML = "Requested destination: <strong>" + escapeHtml(targetLabel) + "</strong>";
+        }
+
+        if (!target) {
+            stageEl.innerHTML =
+                "<h2>Missing Destination</h2>" +
+                "<p class='captcha-warning'>No link target was provided, so the only page we can open is the home page.</p>" +
+                "<div class='captcha-actions'><a class='captcha-button captcha-button-secondary' href='./index.html'>Return Home</a></div>";
+            setStatus("Verification could not begin because the destination parameter is missing.");
+            return;
+        }
+
+        steps = [renderTermsStep].concat(shuffle([
+            renderStepperStep,
+            renderFlyingDigitsStep,
+            renderMemoryStep
+        ]));
+
+        updateProgress();
+        steps[0]();
+    })();
+    </script>
+</body>
+</html>
